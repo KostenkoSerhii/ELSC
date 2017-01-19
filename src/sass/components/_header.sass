@@ -1,0 +1,117 @@
+.header__top-line
+	background: #294773
+	color: $white
+	font: 400 11px "Hind"
+	padding: 10px 0 13px
+	text-align: right
+.header__log-in
+	text-transform: uppercase
+.mobile-lang-wiev
+	display: none
+	+r(768)
+		display: inline-block
+		width: 28px
+		height: 16px
+		background: #000
+.header__lang
+	display: inline-block
+	vertical-align: middle
+	margin-right: 30px
+	line-height: 1em
+	.lang__desc
+		position: relative
+		display: inline-block
+		margin-right: 2px
+		transform: translateY(-36%)
+.lang__list
+	display: none
+	+rmin(769)
+		display: inline-block
+	.lang__item
+		+rmin(769)
+			display: inline-block
+			margin-right: 9px
+		&:last-of-type
+			margin-right: 0
+		a
+			img
+				display: block
+.lang__list-clone
+	+r(768)
+		display: none
+		width: 100%
+		position: absolute
+		top: 49px
+		left: 0
+		text-align: center
+		background: #fff
+		z-index: 2
+	display: none
+	.lang__item
+		display: inline-block
+		margin-right: 10%
+		a
+			display: block
+			padding: 10px
+.header__log-in
+	padding: 3px 30px
+	color: #fff
+.header-bottom
+	padding-top: 32px
+	padding-bottom: 25px
+.header__logo
+	display: inline-block
+	margin-left: 18px
+.menu-bnt-mobile
+	display: none
+	+r(768)
+		display: inline-block
+		position: relative
+		&:after
+			content: "'"
+			position: absolute
+			transform: skewX(-30deg)
+			top: -6px
+			right: 3px
+.header__menu
+	float: right
+	margin-top: 26px
+	.menu__item
+		font: $small-main-font
+		color: $gray-light
+		text-transform: uppercase
+		display: inline-block
+		+r(992)
+			margin-right: 20px
+			&:last-of-type
+				margin-right: 0
+		+rmin(992)
+			margin-right: 51px
+			&:nth-of-type(5)
+				margin-right: 41px
+			&:last-of-type
+				margin-right: 0
+		a
+			display: block
+			+rmin(1200)
+				position: relative
+				&:before, &:after
+					position: absolute
+					display: inline-block
+					transition: transform 0.3s, opacity 0.2s
+					opacity: 0
+				&:before
+					left: -10px
+					display: inline-block
+					content: '['
+					transform: translateX(20px)
+				&:after
+					right: -10px
+					content: ']'
+					transform: translateX(-20px)
+				&:hover
+					&:before, &:after
+						opacity: 1
+						transform: translateX(0px)
+	.is-active
+		color: $blue-light
