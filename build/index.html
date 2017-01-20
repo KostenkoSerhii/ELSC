@@ -19,27 +19,31 @@
         <div class="top-line header__top-line">
           <!--begin container-->
           <div class="container ">
-            <!--begin lang header__lang -->
-            <div class="lang header__lang"> <span class="lang__desc">Language /</span>
-              <a class="mobile-lang-btn" href="#"><img src="img/lang1.png" alt="Eng"></a>
-              <ul class="lang__list">
-                <li class="lang__item">
-                  <a href="#"><img src="img/lang1.png" alt="Eng"></a>
-                </li>
-                <li class="lang__item">
-                  <a href="#"><img src="img/lang2.png" alt="lang"></a>
-                </li>
-                <li class="lang__item">
-                  <a href="#"><img src="img/lang3.png" alt="lang"></a>
-                </li>
-                <li class="lang__item">
-                  <a href="#"><img src="img/lang4.png" alt="lang"></a>
-                </li>
-              </ul>
-            </div>
-            <!--end lang header__lang --><a class="header__log-in btn-border btn-default" href="#">
-				log in
-			</a> </div>
+            <!--begin inner-wrapper-->
+            <div class="inner-wrapper">
+              <!--begin lang header__lang -->
+              <div class="lang header__lang"> <span class="lang__desc">Language /</span>
+                <a class="lang-btn" href="#"><img src="img/lang1.png" alt="Eng"></a>
+                <ul class="lang__list">
+                  <li class="lang__item">
+                    <a href="#"><img src="img/lang1.png" alt="Eng"></a>
+                  </li>
+                  <li class="lang__item">
+                    <a href="#"><img src="img/lang2.png" alt="lang"></a>
+                  </li>
+                  <li class="lang__item">
+                    <a href="#"><img src="img/lang3.png" alt="lang"></a>
+                  </li>
+                  <li class="lang__item">
+                    <a href="#"><img src="img/lang4.png" alt="lang"></a>
+                  </li>
+                </ul>
+              </div>
+              <!--end lang header__lang --><a class="header__log-in btn-border btn-default" href="#">
+					log in
+				</a> </div>
+            <!--end inner-wrapper-->
+          </div>
           <!--end container-->
         </div>
         <!--end header__top-line top-line-->
@@ -66,7 +70,35 @@
       <h1>Index page</h1> <svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
       <li>Item1</li>
       <li>Item2</li>
-      <p>Hello from partials/_header.html</p>
+      <footer class="footer">
+        <!--begin container-->
+        <div class="container cf">
+          <a href="" class="footer__logo"><img src="img/footer-logo.png" alt="Logo"></a>
+          <div class="first-block "> <a href="#" target="_blank">www.elsurfacecoating.com</a>
+            <div class="footer__menu">
+              <ul class="footer__menu first-block-menu">
+                <li class="menu__item"><a href="#">Home</a></li>
+                <li class="menu__item"><a href="#">Our company</a></li>
+                <li class="menu__item"><a href="#">Products</a></li>
+                <li class="menu__item"><a href="#">Services</a></li>
+                <li class="menu__item"><a href="#">Store</a></li>
+                <li class="menu__item"><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper cf">
+            <div class="footer__manufact"> <span>Manufactured by</span> <img src="../../img/HVAC.png" alt="HVAC"> </div>
+            <!--begin footer__contacts contacts-->
+            <div class="footer__contacts contacts"> <a class="contacts__mail" href="mailto:#" target="_blank"><span>info</span>@hvacmarineinc.com</a> <strong>office</strong> <a class="contacts__phone" href="tel:+13055071020">+1 (305) 507 1020</a>
+              <div class="socials ">
+                <a href="#" target="_blank"> <svg class="icon icon-f"><use xlink:href="img/sprite.svg#icon-f"></use></svg> </a>
+                <a href="#" target="_blank"> <svg class="icon icon-in"><use xlink:href="img/sprite.svg#icon-in"></use></svg> </a> <span>/ hvacmarineinc</span> </div>
+            </div>
+          </div>
+          <!--end footer__contacts contacts-->
+        </div>
+        <!--end container-->
+      </footer>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

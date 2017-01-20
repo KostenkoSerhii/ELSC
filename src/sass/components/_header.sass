@@ -6,9 +6,9 @@
 	text-align: right
 .header__log-in
 	text-transform: uppercase
-.mobile-lang-btn
+.lang-btn
 	display: none
-	+r(768)
+	+r(767)
 		display: inline-block
 		width: 28px
 		height: 16px
@@ -25,7 +25,8 @@
 		img
 			width: 28px
 			height: 16px
-.mobile-lang-btn-rov
+
+.lang-btn-rov
 	&:before
 		transform: rotateX(180deg)
 .header__lang
@@ -33,8 +34,7 @@
 	vertical-align: middle
 	margin-right: 30px
 	line-height: 1em
-
-	+r(768)
+	+r(767)
 		margin-right: 0px
 	.lang__desc
 		position: relative
@@ -42,30 +42,26 @@
 		margin-right: 2px
 		transform: translateY(-36%)
 .lang__list
-	+r(768)
+	+r(767)
 		display: none
-		
 		position: absolute
 		top: 40px
-		right: 135px
+		right: 130px
 		text-align: center
 		background: #fff
 		z-index: 2
-	+rmin(769)
+	+rmin(768)
 		display: inline-block
 	.lang__item
-		+rmin(769)
-			display: inline-block
-			margin-right: 9px
 		+rmin(768)
 			display: inline-block
-			margin-right: 10%
+			margin-right: 9px
 		&:last-of-type
 			margin-right: 0
 		a
-			+r(768)
+			+r(767)
 				display: block
-				padding: 10px
+				padding: 15px
 			img
 				display: block
 .header__log-in
@@ -74,20 +70,22 @@
 .header-bottom
 	padding-top: 32px
 	padding-bottom: 25px
+	+r(767)
+		padding-top: 24px
 .header__logo
 	display: inline-block
-	margin-left: 18px
+	margin-left: 5px
 .header__menu
 	float: right
 	margin-top: 26px
-	+r(768)
+	+r(767)
 		display: none
 	.menu__item
 		font: $small-main-font
 		color: $gray-light
 		text-transform: uppercase
 		display: inline-block
-		+r(992)
+		+r(991)
 			margin-right: 20px
 			&:last-of-type
 				margin-right: 0
@@ -123,7 +121,7 @@
 		color: $blue-light
 .menu-bnt-mobile
 	display: none
-	+r(768)
+	+r(767)
 		font: 600 15px "hind"
 		color: grey
 		display: inline-block
@@ -162,14 +160,16 @@
 				bottom: 11px
 .mobile-menu
 	display: none
-	position: absolute
+	position: fixed
 	left: 0
 	top: 0
-	width: 100%
-	height: 100%
+	bottom: 0
+	right: 0
 	text-align: center
 	background: #fff
 	padding: 0 15px
+	z-index: 2
+	overflow: auto
 	span
 		font: 600 55px "Hind"
 		color: $blue-light
@@ -194,7 +194,6 @@
 			background: #989898
 			border-radius: 1px
 			top: 100%
-	
 .close-mobile-menu
 	margin: 5% auto 0
 	position: relative
@@ -206,3 +205,5 @@
 .mobile-menu-active
 	width: 100%
 	display: block
+.body-ovh
+	overflow: hidden

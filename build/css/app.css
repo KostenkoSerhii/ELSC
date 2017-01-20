@@ -96,14 +96,34 @@ html {
   display: inline-block;
 }
 
-.icon-facebook:before {
+.icon-f:before {
   content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-in:before {
+  content: "";
+}
+
+.icon-f {
+  width: 0.54em;
+  height: 1em;
+  fill: #FFF;
 }
 
 .icon-facebook {
   width: 0.53em;
   height: 1em;
   fill: #000;
+}
+
+.icon-in {
+  width: 1em;
+  height: 1em;
+  fill: initial;
 }
 
 * {
@@ -162,11 +182,11 @@ a {
   text-transform: uppercase;
 }
 
-.mobile-lang-btn {
+.lang-btn {
   display: none;
 }
 
-.mobile-lang-btn-rov:before {
+.lang-btn-rov:before {
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
@@ -207,7 +227,7 @@ a {
 
 .header__logo {
   display: inline-block;
-  margin-left: 18px;
+  margin-left: 5px;
 }
 
 .header__menu {
@@ -236,14 +256,16 @@ a {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  right: 0;
   text-align: center;
   background: #fff;
   padding: 0 15px;
+  z-index: 2;
+  overflow: auto;
 }
 
 .mobile-menu span {
@@ -302,6 +324,133 @@ a {
   display: block;
 }
 
+.body-ovh {
+  overflow: hidden;
+}
+
+.footer {
+  background: #294773;
+  color: #fff;
+  font: 400 13px "Hind";
+  padding-top: 65px;
+  padding-bottom: 46px;
+}
+
+.footer .wrapper {
+  display: inline-block;
+}
+
+.footer .first-block, .footer .footer__manufact, .footer .footer__contacts, .footer .footer__logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer .first-block {
+  margin-left: 94px;
+}
+
+.footer .first-block a {
+  font-weight: 600;
+}
+
+.footer .socials a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 4px;
+}
+
+.footer .socials a .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.footer .socials span {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+.footer__logo {
+  margin-top: 5px;
+}
+
+.footer__menu {
+  margin-top: 33px;
+  font-size: 15px;
+  position: relative;
+  line-height: 1.5em;
+}
+
+.footer__menu:before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  top: -17px;
+  left: 0;
+  background: #000;
+}
+
+.footer__manufact {
+  margin-left: 339px;
+  text-align: center;
+}
+
+.footer__manufact span {
+  display: block;
+}
+
+.footer__manufact img {
+  margin-top: 7px;
+}
+
+.footer__contacts {
+  font-weight: 700;
+  margin-left: 48px;
+  margin-top: 2px;
+}
+
+.footer__contacts .contacts__mail {
+  font-weight: 600px;
+  display: block;
+  margin-bottom: 23px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.footer__contacts .contacts__mail:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 76px;
+  height: 2px;
+  background: #000;
+}
+
+.footer__contacts .contacts__mail span {
+  font-weight: 300;
+}
+
+.footer__contacts strong {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.footer__contacts .contacts__phone {
+  font-weight: 400;
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 320px){
   .container{
     width: 100%;
@@ -318,13 +467,6 @@ a {
   .container{
     width: 750px;
   }
-  .lang__list .lang__item{
-    display: inline-block;
-    margin-right: 10%;
-  }
-}
-
-@media only screen and (min-width: 769px){
   .lang__list{
     display: inline-block;
   }
@@ -358,7 +500,7 @@ a {
     box-shadow: 0 0 2px #fff;
   }
   .inner-wrapper{
-    padding: 0 22px;
+    padding: 0 29px;
   }
   .container{
     width: 1054px;
@@ -397,7 +539,25 @@ a {
   }
 }
 
+@media only screen and (max-width: 1200px){
+  .footer__manufact{
+    margin-left: 255px;
+  }
+}
+
 @media only screen and (max-width: 992px){
+  .footer .first-block{
+    margin-left: 30px;
+  }
+  .footer__manufact{
+    margin-left: 125px;
+  }
+  .footer__contacts{
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px){
   .header__menu .menu__item{
     margin-right: 20px;
   }
@@ -407,7 +567,50 @@ a {
 }
 
 @media only screen and (max-width: 768px){
-  .mobile-lang-btn{
+  .footer{
+    font-size: 11px;
+    padding-top: 30px;
+    padding-bottom: 20;
+  }
+  .footer .socials a{
+    width: 22px;
+    height: 22px;
+  }
+  .footer__logo{
+    margin-top: 0;
+  }
+  .footer__logo img{
+    width: 84px;
+    height: 63px;
+  }
+  .footer__menu{
+    font-size: 11px;
+    margin-top: 26px;
+  }
+  .footer__menu:before{
+    top: -15px;
+  }
+  .footer__manufact{
+    font-size: 9px;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+  }
+  .footer__manufact img{
+    width: 52px;
+    height: 52px;
+  }
+  .footer__contacts{
+    margin-left: 10px;
+    margin-top: 0;
+  }
+  .footer__contacts strong, .footer__contacts .contacts__phone{
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .lang-btn{
     display: inline-block;
     width: 28px;
     height: 16px;
@@ -415,7 +618,7 @@ a {
     margin-right: 33px;
     position: relative;
   }
-  .mobile-lang-btn:before{
+  .lang-btn:before{
     transition: all 0.3s;
     content: '';
     position: absolute;
@@ -427,7 +630,7 @@ a {
     border-width: 6px 6.5px 0 6.5px;
     border-color: #ffffff transparent transparent transparent;
   }
-  .mobile-lang-btn img{
+  .lang-btn img{
     width: 28px;
     height: 16px;
   }
@@ -438,14 +641,17 @@ a {
     display: none;
     position: absolute;
     top: 40px;
-    right: 135px;
+    right: 130px;
     text-align: center;
     background: #fff;
     z-index: 2;
   }
   .lang__list .lang__item a{
     display: block;
-    padding: 10px;
+    padding: 15px;
+  }
+  .header-bottom{
+    padding-top: 24px;
   }
   .header__menu{
     display: none;
@@ -494,6 +700,25 @@ a {
   }
   .menu-bnt-mobile div:after{
     bottom: 11px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .footer .wrapper{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer .first-block{
+    float: right;
+  }
+  .footer__logo{
+    float: left;
+  }
+  .footer__manufact{
+    float: left;
+  }
+  .footer__contacts{
+    float: right;
   }
 }
 

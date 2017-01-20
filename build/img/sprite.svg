@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-f" viewBox="0 0 11.813 22.04">
+    <path d="M.004 7.6v4.22h3.385v10.22H7.6V11.82h4.212V7.6H7.6V5.44c-.01-.325.084-.644.27-.91a.713.713 0 0 1 .559-.38h3.384V.01H8.428a4.512 4.512 0 0 0-1.962.43 5.215 5.215 0 0 0-1.6 1.17 5.407 5.407 0 0 0-1.08 1.75 5.844 5.844 0 0 0-.4 2.16V7.6H.002h.002z"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-in" viewBox="0 0 14 14">
+    <image data-name="&lt;Grupo&gt;" width="14" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA21BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADeEzS0AAAAR3RSTlMANIefk1ACiv7BD13o56LM0J24+0RA/BX4ZAs9HDLA1DyeH+X6U1U/TIvSB06ICKTf901acAk37DvK2KPC/RSCuwwugY1LAQGKyRkAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAk0lEQVQI10WP1RLCUAxEF4pcnCItUtxdCsVd8v9/RMK0sA9JzmSSbAD4/JooEAyBFVbkKhIFYh7EE5QEUlKm9Uw2lyfDRIFIFUtlq1KtEdXBvUazRe1Ol6ueYH/AYThSLo4nMj71ujNrToul/UVZtVo7prNh3GInh/aH44mTcYZNf2ls8vIzeb2J6ftDlxeerzfwAWkHI7lcWQ7oAAAAAElFTkSuQmCC"/>
 </symbol></svg>

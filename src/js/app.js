@@ -7,29 +7,31 @@
 sayHello();
 
 $(document).ready(function(){
-/*begin ready*/
+	/*begin ready*/
 
-/*begin lang*/
-$(".mobile-lang-btn").on("click", function(){
-	$(".lang__list").slideToggle();
-	$(".mobile-lang-btn").toggleClass("mobile-lang-btn-rov");
-});
-/*end lang*/
+	/*begin lang*/
+	$(".lang-btn").on("click", function(){
+		$(".lang__list").slideToggle();
+		$(".lang-btn").toggleClass("lang-btn-rov");
+	});
+	/*end lang*/
 
-/*begin menu*/
+	/*begin menu*/
 
-var menuClone = $(".header__menu").clone(true);
-menuClone.attr("class", "menu-clone");
-$(".mobile-menu").append(menuClone);
-$(".menu-bnt-mobile").on("click", function(){
-	$(".mobile-menu").toggleClass("mobile-menu-active");
-});
+	var menuClone = $(".header__menu").clone(true);
+	menuClone.attr("class", "menu-clone");
+	$(".mobile-menu").append(menuClone);
+	$(".menu-bnt-mobile").on("click", function(){
+		$("body").addClass("body-ovh");
+		$(".mobile-menu").slideDown();
+	});
 
-$(".close-mobile-menu").on("click", function(){
-$(".mobile-menu").removeClass("mobile-menu-active");
-});
-/*end menu*/
+	$(".close-mobile-menu").on("click", function(){
+		$("body").removeClass("body-ovh");
+		$(".mobile-menu").slideUp();
+	});
+	/*end menu*/
 
 
-/*end ready*/
+	/*end ready*/
 });

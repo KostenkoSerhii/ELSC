@@ -2755,9 +2755,9 @@ $(document).ready(function () {
   /*begin ready*/
 
   /*begin lang*/
-  $(".mobile-lang-btn").on("click", function () {
+  $(".lang-btn").on("click", function () {
     $(".lang__list").slideToggle();
-    $(".mobile-lang-btn").toggleClass("mobile-lang-btn-rov");
+    $(".lang-btn").toggleClass("lang-btn-rov");
   });
   /*end lang*/
 
@@ -2767,11 +2767,13 @@ $(document).ready(function () {
   menuClone.attr("class", "menu-clone");
   $(".mobile-menu").append(menuClone);
   $(".menu-bnt-mobile").on("click", function () {
-    $(".mobile-menu").toggleClass("mobile-menu-active");
+    $("body").addClass("body-ovh");
+    $(".mobile-menu").slideDown();
   });
 
   $(".close-mobile-menu").on("click", function () {
-    $(".mobile-menu").removeClass("mobile-menu-active");
+    $("body").removeClass("body-ovh");
+    $(".mobile-menu").slideUp();
   });
   /*end menu*/
 
