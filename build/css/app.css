@@ -162,8 +162,13 @@ a {
   text-transform: uppercase;
 }
 
-.mobile-lang-wiev {
+.mobile-lang-btn {
   display: none;
+}
+
+.mobile-lang-btn-rov:before {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .header__lang {
@@ -182,30 +187,12 @@ a {
   transform: translateY(-36%);
 }
 
-.lang__list {
-  display: none;
-}
-
 .lang__list .lang__item:last-of-type {
   margin-right: 0;
 }
 
 .lang__list .lang__item a img {
   display: block;
-}
-
-.lang__list-clone {
-  display: none;
-}
-
-.lang__list-clone .lang__item {
-  display: inline-block;
-  margin-right: 10%;
-}
-
-.lang__list-clone .lang__item a {
-  display: block;
-  padding: 10px;
 }
 
 .header__log-in {
@@ -221,10 +208,6 @@ a {
 .header__logo {
   display: inline-block;
   margin-left: 18px;
-}
-
-.menu-bnt-mobile {
-  display: none;
 }
 
 .header__menu {
@@ -247,6 +230,78 @@ a {
   color: #294773;
 }
 
+.menu-bnt-mobile {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 0 15px;
+}
+
+.mobile-menu span {
+  font: 600 55px "Hind";
+  color: #294773;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.mobile-menu span:before {
+  content: "\'";
+  position: absolute;
+  -webkit-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+  font-size: 28px;
+  font-weight: 700;
+  top: 0px;
+  right: 16px;
+}
+
+.mobile-menu span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 2px;
+  background: #989898;
+  border-radius: 1px;
+  top: 115%;
+}
+
+.close-mobile-menu {
+  margin: 8% auto 0;
+  position: relative;
+  background-image: url("../img/sprite.png");
+  width: 48px;
+  height: 53px;
+  background-position: 0px 0px;
+}
+
+.menu-clone a {
+  font: 400 50px/1.5em "Hind";
+  color: #294773;
+}
+
+.mobile-menu-active {
+  width: 100%;
+  display: block;
+}
+
 @media only screen and (min-width: 320px){
   .container{
     width: 100%;
@@ -262,6 +317,10 @@ a {
 @media only screen and (min-width: 768px){
   .container{
     width: 750px;
+  }
+  .lang__list .lang__item{
+    display: inline-block;
+    margin-right: 10%;
   }
 }
 
@@ -348,34 +407,93 @@ a {
 }
 
 @media only screen and (max-width: 768px){
-  .mobile-lang-wiev{
+  .mobile-lang-btn{
     display: inline-block;
     width: 28px;
     height: 16px;
     background: #000;
+    margin-right: 33px;
+    position: relative;
   }
-  .lang__list-clone{
-    display: none;
-    width: 100%;
+  .mobile-lang-btn:before{
+    transition: all 0.3s;
+    content: '';
     position: absolute;
-    top: 49px;
-    left: 0;
+    right: -21px;
+    top: 6px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 6px 6.5px 0 6.5px;
+    border-color: #ffffff transparent transparent transparent;
+  }
+  .mobile-lang-btn img{
+    width: 28px;
+    height: 16px;
+  }
+  .header__lang{
+    margin-right: 0px;
+  }
+  .lang__list{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 135px;
     text-align: center;
     background: #fff;
     z-index: 2;
   }
+  .lang__list .lang__item a{
+    display: block;
+    padding: 10px;
+  }
+  .header__menu{
+    display: none;
+  }
   .menu-bnt-mobile{
+    font: 600 15px "hind";
+    color: grey;
     display: inline-block;
     position: relative;
+    float: right;
+    padding-left: 56px;
+    height: 30px;
+    line-height: 30px;
+    right: 48px;
+    top: 15px;
   }
   .menu-bnt-mobile:after{
-    content: "'";
+    content: "\'";
     position: absolute;
     -webkit-transform: skewX(-30deg);
     -ms-transform: skewX(-30deg);
     transform: skewX(-30deg);
     top: -6px;
-    right: 3px;
+    right: 6px;
+  }
+  .menu-bnt-mobile div{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 40px;
+    height: 6px;
+    background: #808080;
+    border-radius: 5px;
+  }
+  .menu-bnt-mobile div:before, .menu-bnt-mobile div:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #808080;
+    border-radius: 5px;
+  }
+  .menu-bnt-mobile div:before{
+    top: 11px;
+  }
+  .menu-bnt-mobile div:after{
+    bottom: 11px;
   }
 }
 

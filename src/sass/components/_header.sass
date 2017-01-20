@@ -6,53 +6,68 @@
 	text-align: right
 .header__log-in
 	text-transform: uppercase
-.mobile-lang-wiev
+.mobile-lang-btn
 	display: none
 	+r(768)
 		display: inline-block
 		width: 28px
 		height: 16px
 		background: #000
+		margin-right: 33px
+		position: relative
+		&:before
+			+tr(all .3s)
+			content: ''
+			position: absolute
+			right: -21px
+			top: 6px
+			+arr(13, 6, #ffffff, b)
+		img
+			width: 28px
+			height: 16px
+.mobile-lang-btn-rov
+	&:before
+		transform: rotateX(180deg)
 .header__lang
 	display: inline-block
 	vertical-align: middle
 	margin-right: 30px
 	line-height: 1em
+
+	+r(768)
+		margin-right: 0px
 	.lang__desc
 		position: relative
 		display: inline-block
 		margin-right: 2px
 		transform: translateY(-36%)
 .lang__list
-	display: none
+	+r(768)
+		display: none
+		
+		position: absolute
+		top: 40px
+		right: 135px
+		text-align: center
+		background: #fff
+		z-index: 2
 	+rmin(769)
 		display: inline-block
 	.lang__item
 		+rmin(769)
 			display: inline-block
 			margin-right: 9px
+		+rmin(768)
+			display: inline-block
+			margin-right: 10%
 		&:last-of-type
 			margin-right: 0
 		a
+			+r(768)
+				display: block
+				padding: 10px
 			img
 				display: block
-.lang__list-clone
-	+r(768)
-		display: none
-		width: 100%
-		position: absolute
-		top: 49px
-		left: 0
-		text-align: center
-		background: #fff
-		z-index: 2
-	display: none
-	.lang__item
-		display: inline-block
-		margin-right: 10%
-		a
-			display: block
-			padding: 10px
 .header__log-in
 	padding: 3px 30px
 	color: #fff
@@ -62,20 +77,11 @@
 .header__logo
 	display: inline-block
 	margin-left: 18px
-.menu-bnt-mobile
-	display: none
-	+r(768)
-		display: inline-block
-		position: relative
-		&:after
-			content: "'"
-			position: absolute
-			transform: skewX(-30deg)
-			top: -6px
-			right: 3px
 .header__menu
 	float: right
 	margin-top: 26px
+	+r(768)
+		display: none
 	.menu__item
 		font: $small-main-font
 		color: $gray-light
@@ -115,3 +121,88 @@
 						transform: translateX(0px)
 	.is-active
 		color: $blue-light
+.menu-bnt-mobile
+	display: none
+	+r(768)
+		font: 600 15px "hind"
+		color: grey
+		display: inline-block
+		position: relative
+		float: right
+		padding-left: 56px
+		height: 30px
+		line-height: 30px
+		right: 48px
+		top: 15px
+		&:after
+			content: "\'"
+			position: absolute
+			transform: skewX(-30deg)
+			top: -6px
+			right: 6px
+		div
+			position: absolute
+			left: 0
+			top: 12px
+			width: 40px
+			height: 6px
+			background: #808080
+			border-radius: 5px
+			&:before, &:after
+				content: ''
+				position: absolute
+				left: 0
+				width: 100%
+				height: 100%
+				background: #808080
+				border-radius: 5px
+			&:before
+				top: 11px
+			&:after
+				bottom: 11px
+.mobile-menu
+	display: none
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	background: #fff
+	padding: 0 15px
+	span
+		font: 600 55px "Hind"
+		color: $blue-light
+		text-transform: uppercase
+		position: relative
+		display: inline-block
+		margin-top: 5%
+		margin-bottom: 8%
+		&:before
+			content: "\'"
+			position: absolute
+			transform: skewX(-30deg)
+			font-size: 28px
+			font-weight: 700
+			top: 0px
+			right: 16px
+		&:after
+			content: ''
+			+vcenter
+			width: 65px
+			height: 2px
+			background: #989898
+			border-radius: 1px
+			top: 115%
+	
+.close-mobile-menu
+	margin: 8% auto 0
+	position: relative
+	+s(icon-close)
+.menu-clone
+	a
+		font: 400 50px/1.5em "Hind"
+		color: $blue-light
+.mobile-menu-active
+	width: 100%
+	display: block
