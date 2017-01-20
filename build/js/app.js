@@ -2768,14 +2768,20 @@ $(document).ready(function () {
   $(".mobile-menu").append(menuClone);
   $(".menu-bnt-mobile").on("click", function () {
     $("body").addClass("body-ovh");
+    $(".lang__list").slideUp();
+    $(".lang-btn").removeClass("lang-btn-rov");
     $(".mobile-menu").slideDown();
   });
-
   $(".close-mobile-menu").on("click", function () {
     $("body").removeClass("body-ovh");
     $(".mobile-menu").slideUp();
   });
   /*end menu*/
 
+  /*begin slick*/
+  $('.slider').slick({
+    dots: true
+  });
+  /*end slick*/
   /*end ready*/
 });

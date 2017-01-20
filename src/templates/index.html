@@ -2,26 +2,25 @@
 title: Index page
 ---
 {% extends "layouts/_layout.html" %}
-
 {% block content %}
+<div class="index">
+	<!--begin slider-->
+	<div class="slider">
+		<div class="slider__item">
+			<div class="container">
+
+			</div>
+		</div>
+	</div>
+	<!--end slider-->
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
-	
-	{# partial example #}
-
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
 	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
+	{% import "data/data.html" as tests %}
+
+	{% for test in tests.list %}
+	<li>{{test.title}}</li>
+	{% endfor %}
 	{# end of example #}
+</div>
 
 {% endblock %}
