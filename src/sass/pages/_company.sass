@@ -1,0 +1,109 @@
+.company
+	.h1-block
+		background: url("../img/company-h1-bg.jpg")
+		+cover
+		text-align: center
+		padding-bottom: 105px
+		padding-top: 30px
+		+r(767)
+			padding-top: 40px	
+			padding-bottom: 80px
+.company__main-content
+	background: #fff
+	padding-bottom: 94px
+	+r(767)
+		padding-bottom: 80px
+	.column-wrapper
+		text-align: center
+		+r(991)
+			padding-top: 45px
+.company__quote-block
+	text-align: center
+	position: relative
+	top: -90px
+	display: inline-block
+	padding: 62px 142px 0
+	background: #fff
+	z-index: 1
+	color: $gray-light
+	font: 300 22px "Hind"
+	border-radius: 5px
+	line-height: 1.3em
+	+r(767)
+		top: -40px
+		font-size: 18px
+		padding: 50px 80px 0
+	+r(549)
+		padding: 50px 10px 0
+	&:before
+		content: ''
+		position: absolute
+		top: -3px
+		left: 50%
+		transform: translateX(-50%)
+		height: 6px
+		width: 77%
+		background: $blue-light
+	&:after
+		content: ''
+		position: absolute
+		bottom: -40px
+		left: 50%
+		transform: translateX(-50%)
+		height: 2px
+		width: 65px
+		background: $gray
+	strong
+		font-weight: 600
+	.quote__author
+		color: $blue-light
+		font-weight: 400
+		margin-top: 13px
+		font-size: 15px
+		span
+			font-weight: 700
+.company__column
+	display: inline-block
+	width: 353px
+	font: $main-font
+	color: $gray-light
+	vertical-align: top
+	text-align: justify
+	line-height: 1.1em
+	+r(991)
+		width: 300px
+		img
+			 width: 300px
+			 height: auto
+	+r(767)
+		font:	$small-main-font
+		max-width: 360px
+		width: auto
+		img
+			width: 360px
+	+r(549)
+		img
+			width: 280px
+			display: block
+			margin-left: auto
+			margin-right: auto
+.company__left-column
+	margin-right: 65px
+	+r(991)
+		margin-right: 30px
+	+r(767)
+		margin-right: 0
+	&:first-letter
+		font-size: 4em
+		font-weight: 700
+		float: left
+	img
+		margin-top: 35px
+		+r(768)
+			margin-bottom: 30px
+.company__right-column 
+	img
+		margin-bottom: 35px
+		+r(768)
+			margin-bottom: 0
+			margin-top: 35px

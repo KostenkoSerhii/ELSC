@@ -644,6 +644,108 @@ h1 {
   margin-bottom: 50px;
 }
 
+.company .h1-block {
+  background: url("../img/company-h1-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  padding-bottom: 105px;
+  padding-top: 30px;
+}
+
+.company__main-content {
+  background: #fff;
+  padding-bottom: 94px;
+}
+
+.company__main-content .column-wrapper {
+  text-align: center;
+}
+
+.company__quote-block {
+  text-align: center;
+  position: relative;
+  top: -90px;
+  display: inline-block;
+  padding: 62px 142px 0;
+  background: #fff;
+  z-index: 1;
+  color: #6f6e6e;
+  font: 300 22px "Hind";
+  border-radius: 5px;
+  line-height: 1.3em;
+}
+
+.company__quote-block:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 6px;
+  width: 77%;
+  background: #294773;
+}
+
+.company__quote-block:after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 2px;
+  width: 65px;
+  background: gray;
+}
+
+.company__quote-block strong {
+  font-weight: 600;
+}
+
+.company__quote-block .quote__author {
+  color: #294773;
+  font-weight: 400;
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+.company__quote-block .quote__author span {
+  font-weight: 700;
+}
+
+.company__column {
+  display: inline-block;
+  width: 353px;
+  font: 400 15px "Hind", sans-serif;
+  color: #6f6e6e;
+  vertical-align: top;
+  text-align: justify;
+  line-height: 1.1em;
+}
+
+.company__left-column {
+  margin-right: 65px;
+}
+
+.company__left-column:first-letter {
+  font-size: 4em;
+  font-weight: 700;
+  float: left;
+}
+
+.company__left-column img {
+  margin-top: 35px;
+}
+
+.company__right-column img {
+  margin-bottom: 35px;
+}
+
 .header__top-line {
   background: #294773;
   color: white;
@@ -1080,6 +1182,19 @@ h1 {
 }
 
 @media only screen and (max-width: 991px){
+  .company__main-content .column-wrapper{
+    padding-top: 45px;
+  }
+  .company__column{
+    width: 300px;
+  }
+  .company__column img{
+    width: 300px;
+    height: auto;
+  }
+  .company__left-column{
+    margin-right: 30px;
+  }
   .header__menu .menu__item{
     margin-right: 20px;
   }
@@ -1092,6 +1207,13 @@ h1 {
   h1{
     font-size: 40px;
     line-height: 1em;
+  }
+  .company__left-column img{
+    margin-bottom: 30px;
+  }
+  .company__right-column img{
+    margin-bottom: 0;
+    margin-top: 35px;
   }
   .footer{
     font-size: 11px;
@@ -1222,6 +1344,29 @@ h1 {
   .products .product-third .long-desc{
     margin-bottom: 34px;
   }
+  .company .h1-block{
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .company__main-content{
+    padding-bottom: 80px;
+  }
+  .company__quote-block{
+    top: -40px;
+    font-size: 18px;
+    padding: 50px 80px 0;
+  }
+  .company__column{
+    font: 400 13px "Hind", sans-serif;
+    max-width: 360px;
+    width: auto;
+  }
+  .company__column img{
+    width: 360px;
+  }
+  .company__left-column{
+    margin-right: 0;
+  }
   .lang-btn{
     display: inline-block;
     width: 28px;
@@ -1346,6 +1491,15 @@ h1 {
   }
   .products .product-second .long-desc{
     background: #fff;
+  }
+  .company__quote-block{
+    padding: 50px 10px 0;
+  }
+  .company__column img{
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

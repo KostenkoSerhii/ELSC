@@ -2753,7 +2753,11 @@ sayHello();
 
 $(document).ready(function () {
 	/*begin ready*/
-
+	var windowWidth = $(window).width();
+	if (windowWidth < 768) {
+		var img = $(".company__right-column").children("img").detach();
+		$(".company__right-column ").append(img);
+	}
 	/*begin lang*/
 	$(".lang-btn").on("click", function () {
 		$(".lang__list").slideToggle();
