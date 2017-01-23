@@ -3,24 +3,51 @@ title: Index page
 ---
 {% extends "layouts/_layout.html" %}
 {% block content %}
-<div class="index">
-	<!--begin slider-->
-	<div class="slider">
-		<div class="slider__item">
-			<div class="container">
-
+<!--begin home-page-->
+<div class="home-page">
+	<div class="first-slider">
+		<!--begin slider-->
+		<div class="slider">
+			<div class="slider__item">
+				<img class="bg-img" src="img/slider1-img1.jpg" alt="alt"  >
+				<div class="container">
+					<div class="content-wrapper">
+						<h1>Security surfaces
+							<span>for your home</span>
+						</h1>
+						<br>
+						<a href="" class="btn-border btn-default">Write us</a>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<!--end slider-->
-	
-	{# data usage example #}
-	{% import "data/data.html" as tests %}
+			<div class="slider__item">
+				<img class="bg-img" src="img/slider1-img1.jpg" alt="alt"  >
+				<div class="container">
+					<div class="content-wrapper">
+						<h1>Security surfaces
+							<span>for your home</span>
+						</h1>
+						<br>
+						<a href="" class="btn-border btn-default">Write us</a>
+					</div>
+				</div>
+			</div>
 
-	{% for test in tests.list %}
-	<li>{{test.title}}</li>
-	{% endfor %}
-	{# end of example #}
+		</div>
+		<!--end slider-->
+	</div>
+
 </div>
+<!--end home-page-->
+
+
+<!-- 	{# data usage example #}
+{% import "data/data.html" as tests %}
+
+{% for test in tests.list %}
+<li>{{test.title}}</li>
+{% endfor %}
+{# end of example #} -->
+
 
 {% endblock %}

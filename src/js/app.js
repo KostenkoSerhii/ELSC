@@ -34,9 +34,7 @@ $(document).ready(function(){
 	/*end menu*/
 
 /*begin slick*/
- $('.slider').slick({
- 	dots: true
-  });
+ $('.slider').slick();
 /*end slick*/
 	/*end ready*/
 });

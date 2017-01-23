@@ -9,9 +9,13 @@
   font-style: normal;
 }
 
-$icon-f: "\EA01";
-$icon-facebook: "\EA02";
-$icon-in: "\EA03";
+$icon-downblue: "\EA01";
+$icon-downred: "\EA02";
+$icon-f: "\EA03";
+$icon-facebook: "\EA04";
+$icon-in: "\EA05";
+$icon-videoblue: "\EA06";
+$icon-videored: "\EA07";
 
 
 %icon {
@@ -30,6 +34,10 @@ $icon-in: "\EA03";
   display: inline-block;
 }
 
+.icon-downblue:before { content: $icon-downblue; }
+.icon-downred:before { content: $icon-downred; }
 .icon-f:before { content: $icon-f; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-in:before { content: $icon-in; }
+.icon-videoblue:before { content: $icon-videoblue; }
+.icon-videored:before { content: $icon-videored; }

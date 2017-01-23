@@ -4,6 +4,9 @@
 	font: 400 13px "Hind"
 	padding-top: 65px
 	padding-bottom: 46px
+	a
+		&:hover
+			color: #ddd
 	.wrapper
 		display: inline-block
 		+r(550)
@@ -38,6 +41,10 @@
 				height: 22px
 			.icon
 				+vcenter
+			+rmin(1200)
+				transition: all .3s
+				&:hover
+					border: 2px solid #ddd - 20%
 		span
 			vertical-align: top
 			display: inline-block

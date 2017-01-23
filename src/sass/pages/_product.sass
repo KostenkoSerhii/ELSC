@@ -1,0 +1,187 @@
+.products
+	.h1-block
+		background: url("../img/prod-h1-img.jpg")
+		+cover
+		text-align: center
+		padding-top: 22px
+		border-bottom: 10px solid #fff
+		+r(767)
+			border-bottom: 50px solid #fff
+	.h1-desc
+		margin-top: 10px
+		background: #fff
+		padding: 36px 75px  0
+		color: $gray
+		font: $main-font
+		font-size: 18px
+		border-radius: 10px 10px 0 0
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 70%
+			height: 8px
+			background: #294773
+			left: 50%
+			transform: translateX(-50%)
+			top: -4px
+		+r(767)
+			bottom: -28px
+			font: $small-main-font
+			padding: 10px 40px 0
+			&:before
+				height: 4px
+				top: -2px
+		+r(549)
+			padding: 20px 20px 0
+	.product-first
+		background: url("../img/prod1-bg.jpg") 
+		+cover
+	h2
+		font: 700 86px/.6em "Hind"
+		color: #fff
+		+r(767)
+			font-size: 45px
+	.shore-desc
+		color: $blue
+		font: 700 30px "Hind"
+		display: block
+		margin-bottom: 10px
+		+r(767)
+			font-size: 15px
+	.long-desc
+		font: 400 30px/1.2em "Hind"
+		color: #fff
+		width: 380px
+		margin-bottom: 27px
+		+r(767)
+			font-size: 15px
+			width: 185px
+			margin-bottom: 12px
+	.product-wrapper
+		display: inline-block
+		padding-left: 65px
+		+r(767)
+			padding-left: 30px
+		+r(549)
+			padding-left: 0
+	.product__item
+		padding-top: 125px
+		+r(767)
+			padding-top: 55px
+		.container
+			padding-bottom: 110px
+			+r(767)
+				padding-bottom: 64px
+			&:after
+				content: ''
+				position: absolute
+				height: 6px
+				width: 97%
+				bottom: -3px
+				left: 50%
+				transform: translateX(-50%)
+				background: $blue
+	.item-btn
+		width: 248px
+		height: 80px
+		font: 400 22px/25px "Hind"
+		color: $blue
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		position: relative
+		border: 2px solid #fff
+		z-index: 1
+		&:first-of-type
+			margin-right: 20px
+		+rmin(1200)
+			&:before
+				transition: all .3s
+				+coverdiv
+				content: ''
+				width: 0
+				background: #fff
+				z-index: -1
+			&:hover:before
+				width: 100%
+			&:hover
+				box-shadow: none
+		+r(767)
+			width: 120px
+			height: 40px
+			font-size: 11px
+			line-height: 13px
+			margin-right: 15px
+		.icon 
+			position: absolute
+			font-size: 1.5em
+			+vcenter
+			left: 50px
+			+r(767)
+				left: 27px
+	.down-btn
+		padding: 10px 0 0 48px  
+		+r(767)
+			padding: 6px 0 0 30px 
+		span
+			color: #0c445a
+	.video-btn
+		padding: 27px 0 0 58px 
+		+r(767)
+			padding: 12px 0 0 30px
+	.product-second
+		background: url("../img/prod2-bg.png") no-repeat
+		background-position: 32% 55%
+		text-align: right
+		+r(767)
+			background-size: contain
+			background-position: 28% 55%
+			margin-top: 50px
+			padding-top: 20px
+			margin-bottom: 54px
+			.container
+				padding-bottom: 20px
+				&:after
+					display: none
+		+r(549)
+			background-position: 15% 55%
+		.product-wrapper
+			text-align: left
+		h2, .shore-desc, .item-btn
+			color: $red
+		.long-desc
+			color: $gray
+			+r(767)
+				width: 265px
+				margin-bottom: 25px
+			+r(549)
+				background: #fff
+		.item-btn
+			border-color: #a6a6a6
+			&:hover:before
+				background: #a6a6a6
+	.product-third
+		padding-top: 147px
+		background: url("../img/prod3-bg.jpg") 
+		+r(767)
+			padding-top: 61px
+			.container
+				padding-bottom: 54px
+				&:before
+					content: ''
+					position: absolute
+					height: 6px
+					width: 97%
+					top: -63px
+					left: 50%
+					transform: translateX(-50%)
+					background: $blue
+		+cover
+		.shore-desc
+			margin-bottom: 0
+			margin-top: 3px
+		.long-desc
+			margin-bottom: 50px
+			+r(767)
+				margin-bottom: 34px

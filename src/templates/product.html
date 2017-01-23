@@ -1,0 +1,105 @@
+---
+title: product page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--begin product-->
+<div class="products">
+	<div class="h1-block">
+		<!--begin container-->
+		<div class="container">
+			<h1>Products</h1>
+			<div class="h1-desc">
+				Contamos con productos exclusivos para el cuidado de cualquier tipo de superficie. Aquí puede ver sus diferencias y decidir cual se ajusta mejor a su necesidad.
+			</div>
+		</div>
+		<!--end container-->
+		
+	</div>
+	<!--begin first-product-->
+	<div class="product-first product__item ">
+		<!--begin container-->
+		<div class="container">
+			<div class="product-wrapper">
+				<h2>ELSC 1090</h2>
+				<strong class="shore-desc">METAL GENERAL PURPOSE</strong>
+				<p class="long-desc">Producto especial para limpiar y cubrir superficies metalicas.</p>
+				<a  class="item-btn down-btn  btn-default" href="#" download>
+					{{mixins.icon('downblue')}}
+					Download <br> <span>specifications</span>
+				</a>
+				<a class="item-btn video-btn  btn-default" href="#">
+					{{mixins.icon('videoblue')}}
+					See a video
+				</a>
+			</div>
+		</div>
+		<!--end container-->
+	</div>
+	<!--end first-product-->
+
+	<!--begin product-second-->
+	<div class="product-second product__item ">
+		<!--begin container-->
+		<div class="container">
+			<div class="product-wrapper">
+				<h2>ELSC 1470</h2>
+				<strong class="shore-desc">SEMI-GLOSS HARDSCAPE SEALER</strong>
+				<p class="long-desc">Producto especial para limpiar y cubrir techos y muros.</p>
+				<a  class="item-btn down-btn  btn-default" href="#" download>
+					{{mixins.icon('downred')}}
+					Download <br> specifications
+				</a>
+				<a class="item-btn video-btn  btn-default" href="#">
+					{{mixins.icon('videored')}}
+					See a video
+				</a>
+			</div>
+		</div>
+		<!--end container-->
+	</div>
+	<!--end product-second-->
+
+	<!--begin product-third-->
+	<div class="product-third product__item ">
+		<!--begin container-->
+		<div class="container">
+			<div class="product-wrapper">
+				<h2>ELSC 1110</h2>
+				<strong class="shore-desc">SEMI-GLOSS FLOOR COATING</strong>
+				<p class="long-desc">Producto especial para  limpiar y cubrir pisos.</p>
+				<a  class="item-btn down-btn  btn-default" href="#" download>
+					{{mixins.icon('downred')}}
+					Download <br> specifications
+				</a>
+				<a class="item-btn video-btn  btn-default" href="#">
+					{{mixins.icon('videored')}}
+					See a video
+				</a>
+			</div>
+		</div>
+		<!--end container-->
+	</div>
+	<!--end product-third-->
+
+
+</div>
+<!--end product-->
+
+
+
+
+<!-- 	{# mixin example #}
+{{mixins.icon('facebook')}}
+-->
+<!-- 
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+		{# end of example #} -->
+
+		{% endblock %}
