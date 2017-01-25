@@ -2754,10 +2754,16 @@ sayHello();
 $(document).ready(function () {
 	/*begin ready*/
 	var windowWidth = $(window).width();
-	if (windowWidth < 768) {
+	if (windowWidth < 767) {
 		var img = $(".company__right-column").children("img").detach();
 		$(".company__right-column ").append(img);
-	}
+
+		/*begin services-sliders*/
+		$('.js-services-slider').slick({
+			arrows: true
+		});
+		/*end services-sliders*/
+	};
 	/*begin lang*/
 	$(".lang-btn").on("click", function () {
 		$(".lang__list").slideToggle();
@@ -2785,5 +2791,6 @@ $(document).ready(function () {
 	/*begin slick*/
 	$('.slider').slick();
 	/*end slick*/
+
 	/*end ready*/
 });

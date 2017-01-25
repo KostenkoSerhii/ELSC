@@ -2,28 +2,42 @@
 	background: #294773
 	color: #fff
 	font: 400 13px "Hind"
-	padding-top: 65px
 	padding-bottom: 46px
+	+r(767)
+		font-size: 11px
+		padding-bottom: 20
+	.container
+		padding-top: 65px
+		&:before
+			content: ''
+			position: absolute
+			height: 6px
+			width: 97%
+			top: -3px
+			left: 50%
+			transform: translateX(-50%)
+			background: $blue
+		+r(767)
+			padding-top: 30px
+			&:before
+				width: 87%
 	a
 		&:hover
 			color: #ddd
 	.wrapper
 		display: inline-block
-		+r(550)
+		+r(549)
 			width: 100%
 			margin-top: 20px
-	+r(768)
-		font-size: 11px
-		padding-top: 30px
-		padding-bottom: 20
+
 	.first-block, .footer__manufact, .footer__contacts, .footer__logo
 		display: inline-block
 		vertical-align: top
 	.first-block
 		margin-left: 94px
-		+r(992)
+		+r(991)
 			margin-left: 30px
-		+r(550)
+		+r(549)
 			float: right
 		a
 			font-weight: 600
@@ -52,19 +66,19 @@
 			letter-spacing: 1px
 .footer__logo
 	margin-top: 5px
-	+r(768)
+	+r(767)
 		margin-top: 0
 		img
 			width: 84px
 			height: 63px
-	+r(550)
+	+r(549)
 		float: left
 .footer__menu
 	margin-top: 33px
 	font-size: 15px
 	position: relative
 	line-height: 1.5em
-	+r(768)
+	+r(767)
 		font-size: 11px
 		margin-top: 26px
 	&:before
@@ -75,39 +89,39 @@
 		top: -17px
 		left: 0
 		background: #000
-		+r(768)
+		+r(767)
 			top: -15px
 .footer__manufact
-	margin-left: 339px
+	margin-left: 330px
 	text-align: center
-	+r(1200)
-		margin-left: 255px
-	+r(992)
-		margin-left: 125px
-	+r(768)
+	+r(1199)
+		margin-left: 248px
+	+r(991)
+		margin-left: 118px
+	+r(767)
 		font-size: 9px
 		margin-left: 10px
 		position: relative
 		top: 2px
-	+r(550)
+	+r(549)
 		float: left
 	span
 		display: block
 	img
 		margin-top: 7px
-		+r(768)
+		+r(767)
 			width: 52px
 			height: 52px
 .footer__contacts
 	font-weight: 700
 	margin-left: 48px
 	margin-top: 2px
-	+r(992)
+	+r(991)
 		margin-left: 20px
-	+r(768)
+	+r(767)
 		margin-left: 10px
 		margin-top: 0
-	+r(550)
+	+r(549)
 		float: right
 	.contacts__mail
 		font-weight: 600px
@@ -131,6 +145,6 @@
 	.contacts__phone
 		font-weight: 400
 		font-size: 18px
-	+r(768)
+	+r(767)
 		strong, .contacts__phone
 			font-size: 11px

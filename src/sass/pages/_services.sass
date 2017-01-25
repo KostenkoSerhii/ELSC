@@ -1,0 +1,109 @@
+.services
+	padding-bottom: 40px
+.services__main-content
+	padding-top: 65px
+.services__h1-block
+	+cover
+	+r(549)
+		padding-bottom: 0
+.services__raised-block
+	padding: 37px 60px 0
+	top: 171px
+	+r(991)
+		top: 90px
+	+r(767)
+		top: 74px
+		padding: 20px 35px 0
+.services__content-list
+	padding: 0px  5px 0
+	text-align: center
+	+r(767)
+		width: 252px
+		margin: 0 auto
+.services__list-item
+	display: inline-block
+	width: 252px
+	margin-bottom: 100px
+	+rmin(1200)
+			&:hover
+				.item__img-block
+					background-color: #ccc - 30%
+	+r(991)
+		width: 230px
+	+r(767)
+		width: 252px
+	+r(767)
+		margin-bottom: 105px !important
+	&:nth-of-type(3n+2)
+		margin:  0 124px
+		+r(1199)
+			margin: 0 70px
+		+r(991)
+			margin: 0 5px
+		+r(767)
+			margin: 0
+	.item__img-block
+		display: inline-block
+		width: 129px
+		height: 129px
+		background-color: #ccc
+		border-radius: 50%
+		position: relative
+		z-index: 1
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		transition: background-color .4s
+	h2
+		color: $blue-light
+		font: 600 22px "Hind"
+		margin: 13px 0 5px
+	p
+		color: $gray-light
+		font: $main-font
+		margin-bottom: 34px
+		line-height: 1.3em
+		+r(767)
+			font: $small-main-font
+.services__list-btn
+	padding: 0px 14px
+	border-color: $gray
+	border-radius: 7px
+	color: $gray
+	font: $main-font
+	z-index: 2
+	+rmin(1200)
+		&:before
+			transition: all .3s
+			content: ''
+			+coverdiv
+			background: $gray
+			width: 0
+			z-index: -1
+			border-radius: 5px
+		&:hover
+			color: #fff
+			box-shadow: none
+			&:before
+				width: 100%
+.js-services-slider
+	.slick-prev, .slick-next
+		width: 24px
+		height: 42px
+		margin-top: 0
+		transform: translateY(-50%)
+		top: 65px
+		&:before
+			+coverdiv
+			content: ''
+	.slick-prev
+		+rmin(550)
+			left: -80px
+		&:before
+			+s(ArrowLeft)
+	.slick-next
+		+rmin(550)
+			right: -80px
+		&:before
+			+s(ArrowRight)
+
+		

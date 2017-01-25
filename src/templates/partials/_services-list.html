@@ -1,0 +1,30 @@
+<!--begin services__content-list-->
+<div class="services__content-list services__list-first js-services-slider ">
+	{% import "data/data.html" as tests %}
+	{% for test in tests.services1 %}
+	<div class="item services__list-item " >
+		<div class="item__img-block" style="background-image: url({{test.img}});"></div>
+		<h2>{{test.h2}}</h2>
+		<p>{{test.desc}}</p>
+		<a class="btn-default  services__list-btn" href="#">I need this</a>
+	</div>
+	{% endfor %}
+
+</div>
+<!--end services__content-list-->
+<!--begin services__content-list-->
+<div class="services__content-list services__list-second js-services-slider ">
+	{% import "data/data.html" as tests %}
+	{% for test in tests.services2 %}
+	<div class="item services__list-item " >
+		<div class="item__img-block" style="background-image: url({{test.img}});"></div>
+		<h2>{{test.h2}}</h2>
+		<p>{{test.desc}}</p>
+		<a class="btn-default services__list-btn" href="#">I need this</a>
+	</div>
+	{% endfor %}
+
+</div>
+<!--end services__content-list-->
+
+

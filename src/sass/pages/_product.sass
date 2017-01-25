@@ -1,41 +1,20 @@
 .products
-	.h1-block
-		background: url("../img/prod-h1-img.jpg")
-		+cover
-		text-align: center
-		padding-top: 22px
+	.product__h1-block
+		background: url("../img/prod-h1-img.jpg") 
 		border-bottom: 10px solid #fff
+		+cover
 		+r(767)
 			border-bottom: 50px solid #fff
-	.h1-desc
-		margin-top: 10px
-		background: #fff
-		padding: 36px 75px  0
-		color: $gray
-		font: $main-font
-		font-size: 18px
-		border-radius: 10px 10px 0 0
-		position: relative
-		&:before
-			content: ''
-			position: absolute
-			width: 70%
-			height: 8px
-			background: #294773
-			left: 50%
-			transform: translateX(-50%)
-			top: -4px
-		+r(767)
-			bottom: -28px
-			font: $small-main-font
-			padding: 10px 40px 0
-			&:before
-				height: 4px
-				top: -2px
 		+r(549)
-			padding: 20px 20px 0
-	.product-first
-		background: url("../img/prod1-bg.jpg") 
+			padding-bottom: 0
+	.product__raised-block
+		padding: 36px 74px  0
+		+r(991)
+			top: 85px
+		+r(767)
+			top: 70px
+			padding: 17px 55px  0
+	.product-first, .product-second, .product-third
 		+cover
 	h2
 		font: 700 86px/.6em "Hind"
@@ -71,8 +50,6 @@
 			padding-top: 55px
 		.container
 			padding-bottom: 110px
-			+r(767)
-				padding-bottom: 64px
 			&:after
 				content: ''
 				position: absolute
@@ -82,6 +59,10 @@
 				left: 50%
 				transform: translateX(-50%)
 				background: $blue
+			+r(767)
+				padding-bottom: 64px
+				&:after
+					width: 87%
 	.item-btn
 		width: 248px
 		height: 80px
@@ -131,8 +112,8 @@
 		+r(767)
 			padding: 12px 0 0 30px
 	.product-second
-		background: url("../img/prod2-bg.png") no-repeat
 		background-position: 32% 55%
+		background-size: contain
 		text-align: right
 		+r(767)
 			background-size: contain
@@ -163,16 +144,18 @@
 				background: #a6a6a6
 	.product-third
 		padding-top: 147px
-		background: url("../img/prod3-bg.jpg") 
 		+r(767)
 			padding-top: 61px
-			.container
+		.container
+			&:after
+				display: none
+			+r(767)
 				padding-bottom: 54px
 				&:before
 					content: ''
 					position: absolute
 					height: 6px
-					width: 97%
+					width: 87%
 					top: -63px
 					left: 50%
 					transform: translateX(-50%)
