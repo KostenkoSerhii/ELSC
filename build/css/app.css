@@ -430,6 +430,9 @@ h1 {
   text-align: center;
   padding-bottom: 105px;
   padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .raised-block {
@@ -494,11 +497,7 @@ h1 {
 }
 
 .products .product__h1-block {
-  background: url("../img/prod-h1-img.jpg");
   border-bottom: 10px solid #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 .products .product__raised-block {
@@ -643,10 +642,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.company .company__h1-block {
-  background: url("../img/company-h1-bg.jpg");
-}
-
 .company__main-content {
   background: #fff;
   padding-bottom: 94px;
@@ -724,12 +719,6 @@ h1 {
 
 .services__main-content {
   padding-top: 65px;
-}
-
-.services__h1-block {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
 }
 
 .services__raised-block {
@@ -818,6 +807,20 @@ h1 {
   width: 24px;
   height: 42px;
   background-position: -34px -63px;
+}
+
+.store__raised-block {
+  padding: 35px 77px 0;
+}
+
+.store__list {
+  text-align: center;
+}
+
+.store__list-item {
+  display: inline-block;
+  text-align: left;
+  width: 252px;
 }
 
 .header__top-line {

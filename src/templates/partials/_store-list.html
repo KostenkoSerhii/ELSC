@@ -1,0 +1,29 @@
+<!--begin store__list-->
+<div class="store__list">
+	<!--begin  store store__list-item-->
+	{% import "data/data.html" as tests %}
+	{% for test in tests.store %}
+	<div class=" list-store store__list-item">
+		
+		<h2>{{test.h2}}</h2>
+		<strong>{{test.strong}}</strong>
+		<p>{{test.desc}}</p>
+		<div class="item__select-wrapper">
+			<span>Tamaño</span>
+			<select name="Tamano"></select>
+		</div>
+		<div class="item__select-wrapper">
+			<span>Cantidad</span>
+			<select name="Cantidad"></select>
+		</div>
+		<a href="#">Add to car</a>
+		<a href="#">See the video</a>
+	</div>
+{{test.desc}}
+{% endfor %}
+	<!--end  store store__list-item-->
+</div>
+<!--end store__list-->
+
+
+
