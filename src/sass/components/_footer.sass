@@ -7,6 +7,7 @@
 		font-size: 11px
 		padding-bottom: 20
 	.container
+		+clr
 		padding-top: 65px
 		&:before
 			content: ''
@@ -24,47 +25,18 @@
 	a
 		&:hover
 			color: #ddd
-	.wrapper
-		display: inline-block
-		+r(549)
-			width: 100%
-			margin-top: 20px
-
-	.first-block, .footer__manufact, .footer__contacts, .footer__logo
-		display: inline-block
-		vertical-align: top
-	.first-block
-		margin-left: 94px
-		+r(991)
-			margin-left: 30px
-		+r(549)
-			float: right
-		a
-			font-weight: 600
-	.socials
-		a
-			display: inline-block
-			width: 30px
-			height: 30px
-			border: 2px solid #fff
-			border-radius: 50%
-			position: relative
-			margin-right: 4px
-			+r(768)
-				width: 22px
-				height: 22px
-			.icon
-				+vcenter
-			+rmin(1200)
-				transition: all .3s
-				&:hover
-					border: 2px solid #ddd - 20%
+	.footer__socials
 		span
 			vertical-align: top
 			display: inline-block
 			margin-top: 6px
 			letter-spacing: 1px
+			+r(767)
+				margin-top: 2px
 .footer__logo
+	width: 96px
+	height: 75px
+	+cover
 	margin-top: 5px
 	+r(767)
 		margin-top: 0
@@ -91,6 +63,23 @@
 		background: #000
 		+r(767)
 			top: -15px
+.footer__wrapper
+	+clr
+	display: inline-block
+	+r(549)
+		width: 100%
+		margin-top: 20px
+.footer__first-block, .footer__manufact, .footer__contacts, .footer__logo
+	display: inline-block
+	vertical-align: top
+.footer__first-block
+	margin-left: 94px
+	+r(991)
+		margin-left: 30px
+	+r(549)
+		float: right
+	a
+		font-weight: 600
 .footer__manufact
 	margin-left: 330px
 	text-align: center

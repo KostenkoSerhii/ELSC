@@ -15,27 +15,27 @@
     <!-- BEGIN content -->
     <div class="out">
       <header class="header">
-        <!--begin header__top-line top-line-->
-        <div class="top-line header__top-line">
+        <!--begin header__top-line -->
+        <div class=" header__top-line">
           <!--begin container-->
-          <div class="container ">
+          <div class="container">
             <!--begin inner-wrapper-->
             <div class="inner-wrapper">
               <!--begin lang header__lang -->
-              <div class="lang header__lang"> <span class="lang__desc">Language /</span>
-                <a class="lang-btn" href="#"><img src="img/lang1.png" alt="Eng"></a>
+              <div class="lang"> <span class="lang__desc">Language /</span>
+                <a class="lang-btn js-lang-btn" href="#" style="background-image: url('img/lang1.png');"></a>
                 <ul class="lang__list">
                   <li class="lang__item">
-                    <a href="#"><img src="img/lang1.png" alt="Eng"></a>
+                    <a href="#" style="background-image: url('img/lang1.png');"></a>
                   </li>
                   <li class="lang__item">
-                    <a href="#"><img src="img/lang2.png" alt="lang"></a>
+                    <a href="#" style="background-image: url('img/lang2.png');"></a>
                   </li>
                   <li class="lang__item">
-                    <a href="#"><img src="img/lang3.png" alt="lang"></a>
+                    <a href="#" style="background-image: url('img/lang3.png');"></a>
                   </li>
                   <li class="lang__item">
-                    <a href="#"><img src="img/lang4.png" alt="lang"></a>
+                    <a href="#" style="background-image: url('img/lang4.png');"></a>
                   </li>
                 </ul>
               </div>
@@ -46,41 +46,108 @@
           </div>
           <!--end container-->
         </div>
-        <!--end header__top-line top-line-->
+        <!--end header__top-line -->
         <!--begin header-bottom container-->
         <div class="header-bottom container">
-          <div class="inner-wrapper cf">
-            <a class=" header__logo logo" href="#"><img src="img/logo.png" alt="Logo"></a>
-            <div class="menu-bnt-mobile">
+          <div class="inner-wrapper header__inner-wrapper">
+            <a class=" header__logo " href="#" style="background-image: url('img/logo.png');"></a>
+            <div class="menu-bnt-mobile js-menu-bnt-mobile">
               <div></div>MENU</div>
-            <ul class="header__menu menu">
-              <li class="menu__item is-active"><a href="#">HOME</a></li>
-              <li class="menu__item"><a href="#">COMPANY</a></li>
-              <li class="menu__item"><a href="#">PRODUCTS</a></li>
-              <li class="menu__item"><a href="#">SERVICES</a></li>
-              <li class="menu__item"><a href="#">STORE</a></li>
-              <li class="menu__item"><a href="#">CONTACT US</a></li>
+            <ul class="header__menu">
+              <li class="header__menu-item is-active"><a href="#">HOME</a></li>
+              <li class="header__menu-item"><a href="#">COMPANY</a></li>
+              <li class="header__menu-item"><a href="#">PRODUCTS</a></li>
+              <li class="header__menu-item"><a href="#">SERVICES</a></li>
+              <li class="header__menu-item"><a href="#">STORE</a></li>
+              <li class="header__menu-item"><a href="#">CONTACT US</a></li>
             </ul>
           </div>
         </div>
         <!--end header-bottom container-->
         <div class="mobile-menu">
-          <div class="close-mobile-menu"></div> <span>menu</span> </div>
+          <div class="close-mobile-menu js-close-mobile-menu"></div> <span>menu</span> </div>
       </header>
       <!--begin store-->
       <div class="store">
         <div class="h1-block store__h1-block" style="background-image: url(img/store-h1-bg.jpg);">
           <!--begin container-->
-          <div class="container">
+          <div class="container h1-block__container">
             <h1>Store</h1>
-            <div class="raised-block store__raised-block"> A través de esta plataforma usted puede hacer su compra de manera segura y rapida. Para nosotros será un gusto atenderle en la puerta de su casa. </div>
+            <div> A través de esta plataforma usted puede hacer su compra de manera segura y rapida. Para nosotros será un gusto atenderle en la puerta de su casa. </div>
           </div>
           <!--end container-->
         </div>
         <!--begin store__main-content-->
-        <div class="store__main-content">
+        <div class="store__main-content main-content">
           <!--begin container-->
-          <div class="container"> </div>
+          <div class="container">
+            <!--begin  three-col-list -->
+            <div class="three-col-list ">
+              <!--begin  three-col-list__item -->
+              <div class="three-col-list__item product">
+                <div class="product__img" style="background-image: url('img/store1.png');"></div>
+                <h2>ELSC 1090</h2> <strong>Metal General Purpose</strong>
+                <p>Producto especial para la limpieza y cubrimiento de superficies metalicas. Limpia y protege de manchas, oxido o cualquier tipo de sustancia que atente contra el cuidado de metales.</p>
+                <div class="product__input-block"> <span>Tamaño</span> <select name="Tamano">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+			</select> </div>
+                <div class="product__input-block"> <span>Cantidad</span> <select name="Cantidad">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+				<option value="op5">5</option>
+				<option value="op6">6</option>
+			</select> </div> <a class="btn-default product__btn" href="#">Add to car</a> <a class="btn-default product__btn" href="#">See the video</a> </div>
+              <div class="three-col-list__item product">
+                <div class="product__img" style="background-image: url('img/store2.png');"></div>
+                <h2>ELSC 1470</h2> <strong>Semi-gloss hardscape sealer</strong>
+                <p>Producto especial para la limpieza y cubrimiento de superficies metalicas. Limpia y protege de manchas, oxido o cualquier tipo de sustancia que atente contra el cuidado de metales.</p>
+                <div class="product__input-block"> <span>Tamaño</span> <select name="Tamano">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+			</select> </div>
+                <div class="product__input-block"> <span>Cantidad</span> <select name="Cantidad">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+				<option value="op5">5</option>
+				<option value="op6">6</option>
+			</select> </div> <a class="btn-default product__btn" href="#">Add to car</a> <a class="btn-default product__btn" href="#">See the video</a> </div>
+              <div class="three-col-list__item product">
+                <div class="product__img" style="background-image: url('img/store2.png');"></div>
+                <h2>ELSC 1110</h2> <strong>Semi-gloss floor coating</strong>
+                <p>Producto especial para la limpieza y cubrimiento de superficies metalicas. Limpia y protege de manchas, oxido o cualquier tipo de sustancia que atente contra el cuidado de metales.</p>
+                <div class="product__input-block"> <span>Tamaño</span> <select name="Tamano">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+			</select> </div>
+                <div class="product__input-block"> <span>Cantidad</span> <select name="Cantidad">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+				<option value="op5">5</option>
+				<option value="op6">6</option>
+			</select> </div> <a class="btn-default product__btn" href="#">Add to car</a> <a class="btn-default product__btn" href="#">See the video</a> </div>
+              <!--end  three-col-list__item -->
+            </div>
+            <!--end  three-col-list -->
+          </div>
           <!--end container-->
         </div>
         <!--end store__main-content-->
@@ -98,9 +165,9 @@
  -->
       <footer class="footer">
         <!--begin container-->
-        <div class="container cf">
-          <a href="" class="footer__logo"><img src="img/footer-logo.png" alt="Logo"></a>
-          <div class="first-block "> <a href="#" target="_blank">www.elsurfacecoating.com</a>
+        <div class="container ">
+          <a href="" class="footer__logo" style="background-image: url('img/footer-logo.png');"></a>
+          <div class="footer__first-block "> <a href="#" target="_blank">www.elsurfacecoating.com</a>
             <div class="footer__menu">
               <ul class="footer__menu first-block-menu">
                 <li class="menu__item"><a href="#">Home</a></li>
@@ -112,11 +179,11 @@
               </ul>
             </div>
           </div>
-          <div class="wrapper cf">
+          <div class="footer__wrapper ">
             <div class="footer__manufact"> <span>Manufactured by</span> <img src="../../img/HVAC.png" alt="HVAC"> </div>
             <!--begin footer__contacts contacts-->
-            <div class="footer__contacts contacts"> <a class="contacts__mail" href="mailto:#" target="_blank"><span>info</span>@hvacmarineinc.com</a> <strong>office</strong> <a class="contacts__phone" href="tel:+13055071020">+1 (305) 507 1020</a>
-              <div class="socials ">
+            <div class="footer__contacts "> <a class="contacts__mail" href="mailto:#" target="_blank"><span>info</span>@hvacmarineinc.com</a> <strong>office</strong> <a class="contacts__phone" href="tel:+13055071020">+1 (305) 507 1020</a>
+              <div class="socials footer__socials">
                 <a href="#" target="_blank"> <svg class="icon icon-f"><use xlink:href="img/sprite.svg#icon-f"></use></svg> </a>
                 <a href="#" target="_blank"> <svg class="icon icon-in"><use xlink:href="img/sprite.svg#icon-in"></use></svg> </a> <span>/ hvacmarineinc</span> </div>
             </div>

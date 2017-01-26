@@ -8,20 +8,19 @@ title: product page
 <div class="store">
 	<div class="h1-block store__h1-block" style="background-image: url(img/store-h1-bg.jpg);">
 		<!--begin container-->
-		<div class="container">
+		<div class="container h1-block__container">
 			<h1>Store</h1>
-			<div class="raised-block store__raised-block">
+			<div >
 				A través de esta plataforma usted puede hacer su compra de manera segura y rapida. Para nosotros será un gusto atenderle en la puerta de su casa.
 			</div>
 		</div>
 		<!--end container-->
 	</div>
 	<!--begin store__main-content-->
-	<div class="store__main-content">
+	<div class="store__main-content main-content">
 		<!--begin container-->
 		<div class="container">
-
-
+			{% include "partials/_store-list.html" %}
 		</div>
 		<!--end container-->
 	</div>

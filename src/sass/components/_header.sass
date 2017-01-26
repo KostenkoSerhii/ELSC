@@ -12,9 +12,9 @@
 		display: inline-block
 		width: 28px
 		height: 16px
-		background: #000
 		margin-right: 33px
 		position: relative
+		+cover
 		&:before
 			+tr(all .3s)
 			content: ''
@@ -22,25 +22,21 @@
 			right: -21px
 			top: 6px
 			+arr(13, 6, #ffffff, b)
-		img
-			width: 28px
-			height: 16px
-
-.lang-btn-rov
+.lang-btn-active
 	&:before
 		transform: rotateX(180deg)
-.header__lang
+.lang
 	display: inline-block
 	vertical-align: middle
 	margin-right: 30px
 	line-height: 1em
 	+r(767)
 		margin-right: 0px
-	.lang__desc
-		position: relative
-		display: inline-block
-		margin-right: 2px
-		transform: translateY(-36%)
+.lang__desc
+	position: relative
+	display: inline-block
+	margin-right: 2px
+	transform: translateY(-36%)
 .lang__list
 	+r(767)
 		display: none
@@ -52,35 +48,41 @@
 		z-index: 2
 	+rmin(768)
 		display: inline-block
-	.lang__item
-		+rmin(768)
-			display: inline-block
-			margin-right: 9px
-		&:last-of-type
-			margin-right: 0
-		a
-			+r(767)
-				display: block
-				padding: 15px
-			img
-				display: block
+.lang__item
+	+rmin(768)
+		display: inline-block
+		margin-right: 9px
+	&:last-of-type
+		margin-right: 0
+	a
+		width: 28px
+		height: 16px
+		display: block
+		+cover
+		+r(767)
+			margin: 15px
 .header__log-in
 	padding: 3px 30px
 	color: #fff
 .header-bottom
 	padding-top: 32px
-	padding-bottom: 17px
+	padding-bottom: 30px
 	+r(767)
 		padding-top: 24px
+.header__inner-wrapper
+	+clr
 .header__logo
-	display: inline-block
+	float: left
 	margin-left: 5px
+	width: 104px	
+	height: 81px
+	+cover
 .header__menu
 	float: right
 	margin-top: 26px
 	+r(767)
 		display: none
-	.menu__item
+	.header__menu-item
 		font: $main-font
 		color: $gray-light
 		text-transform: uppercase
@@ -205,5 +207,5 @@
 .mobile-menu-active
 	width: 100%
 	display: block
-.body-ovh
+.js-body-ovh
 	overflow: hidden

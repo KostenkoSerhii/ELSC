@@ -15,8 +15,10 @@ a
 .inner-wrapper
 	+rmin(1200)
 		padding:  0 29px
+.main-content
+		background: #fff
 h1
-	font: 300 100px "Hind"
+	font: 300 100px "Hind", sans-serif
 	color: #fff
 	+r(992)
 		font-size: 60px
@@ -31,34 +33,101 @@ h1
 	+r(767)
 		padding-top: 25px	
 		padding-bottom: 70px
-.raised-block
+.h1-block__container
+	&>div
+		text-align: center
+		position: absolute
+		padding: 62px 142px 0
+		background: #fff
+		max-width: 1024px
+		top:  173px
+		z-index: 1
+		border-radius: 5px 5px 0 0 
+		color: $gray
+		font: $main-font
+		font-size: 18px
+		+r(767)
+			padding: 50px 80px 0
+			max-width: 512px
+			font-size: 13px
+			line-height: 1.3em
+		+r(549)
+			padding: 30px 10px 0!important
+			position: relative
+			top: 0!important
+			margin-top: 20px
+		&:before
+			content: ''
+			position: absolute
+			top: -3px
+			left: 50%
+			transform: translateX(-50%)
+			height: 6px
+			width: 71%
+			background: $blue-light
+.socials
 	text-align: center
-	position: absolute
-	padding: 62px 142px 0
-	background: #fff
-	max-width: 1024px
-	top:  173px
-	z-index: 1
-	border-radius: 5px 5px 0 0 
-	color: $gray
-	font: $main-font
-	font-size: 18px
-	+r(767)
-		padding: 50px 80px 0
-		max-width: 512px
-		font-size: 13px
-		line-height: 1.3em
-	+r(549)
-		padding: 30px 10px 0!important
+	a
+		display: inline-block
+		width: 30px
+		height: 30px
+		border: 2px solid #fff
+		border-radius: 50%
 		position: relative
-		top: 0!important
-		margin-top: 20px
-	&:before
+		margin-right: 4px
+		+r(768)
+			width: 22px
+			height: 22px
+		.icon
+			+vcenter
+		+rmin(1200)
+			transition: all .3s
+			&:hover
+				border: 2px solid #ddd - 20%
+
+				
+.select-view
+	background: #fff
+	border: 1px solid $gray
+	border-radius: 5px
+	color: $gray
+	cursor: pointer
+	font: 400 13px "Hind", sans-serif
+	height: 25px
+	width: 50px
+	padding: 2px 15px  2px 5px
+	position: relative
+	&:after
+		transition: all .3s 
 		content: ''
 		position: absolute
-		top: -3px
-		left: 50%
-		transform: translateX(-50%)
-		height: 6px
-		width: 71%
-		background: $blue-light
+		right: 5px
+		top: 47%
+		transform: translateY(-50%)
+		+arr(8, 5, $gray, b)
+.select_wrapper
+	z-index: 22
+	position: relative
+	.active
+		&:after
+			transform: rotateX(180deg)
+ul.select-options
+	background: #fff
+	position: absolute
+	display: none
+	cursor: pointer
+	border: 1px solid #e2e2e2
+	z-index: 1
+	width: 100%
+	li
+		padding: 5px 0
+		text-align: center
+		&[rel="hide"] 
+			display: none
+		&.active 
+			background: #d3d3d3
+		&:hover
+			background: #eaeaea 
+			transition: background .3s
+.select-hidden
+	display: none

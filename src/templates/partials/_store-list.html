@@ -1,29 +1,43 @@
-<!--begin store__list-->
-<div class="store__list">
-	<!--begin  store store__list-item-->
+<!--begin  three-col-list -->
+<div class="three-col-list ">
+	<!--begin  three-col-list__item -->
 	{% import "data/data.html" as tests %}
 	{% for test in tests.store %}
-	<div class=" list-store store__list-item">
-		
+	<div class="three-col-list__item product">
+		<div class="product__img" style="background-image: url('{{test.img}}');"></div>
 		<h2>{{test.h2}}</h2>
 		<strong>{{test.strong}}</strong>
 		<p>{{test.desc}}</p>
-		<div class="item__select-wrapper">
+		<div class="product__input-block">
 			<span>Tamaño</span>
-			<select name="Tamano"></select>
+			<select name="Tamano">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+			</select>
 		</div>
-		<div class="item__select-wrapper">
+		<div class="product__input-block">
 			<span>Cantidad</span>
-			<select name="Cantidad"></select>
+			<select name="Cantidad">
+				<option value="hide"></option>
+				<option value="op1">1</option>
+				<option value="op2">2</option>
+				<option value="op3">3</option>
+				<option value="op4">4</option>
+				<option value="op5">5</option>
+				<option value="op6">6</option>
+			</select>
 		</div>
-		<a href="#">Add to car</a>
-		<a href="#">See the video</a>
+		<a class="btn-default product__btn" href="#">Add to car</a>
+		<a class="btn-default product__btn" href="#">See the video</a>
 	</div>
-{{test.desc}}
-{% endfor %}
-	<!--end  store store__list-item-->
+
+	{% endfor %}
+	<!--end  three-col-list__item -->
 </div>
-<!--end store__list-->
+<!--end  three-col-list -->
 
 
 

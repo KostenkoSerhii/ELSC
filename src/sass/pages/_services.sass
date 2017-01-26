@@ -1,18 +1,19 @@
 .services
 	padding-bottom: 40px
+	.h1-block__container
+		&>div
+			padding: 37px 60px 0
+			top: 171px
+			+r(991)
+				top: 90px
+			+r(767)
+				top: 74px
+				padding: 20px 35px 0
 .services__main-content
 	padding-top: 65px
 .services__h1-block
 	+r(549)
 		padding-bottom: 0
-.services__raised-block
-	padding: 37px 60px 0
-	top: 171px
-	+r(991)
-		top: 90px
-	+r(767)
-		top: 74px
-		padding: 20px 35px 0
 .services__content-list
 	padding: 0px  5px 0
 	text-align: center
@@ -54,7 +55,7 @@
 		transition: background-color .4s
 	h2
 		color: $blue-light
-		font: 600 22px "Hind"
+		font: 600 22px "Hind", sans-serif
 		margin: 13px 0 5px
 	p
 		color: $gray-light

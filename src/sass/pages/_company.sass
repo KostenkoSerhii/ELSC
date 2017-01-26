@@ -1,52 +1,45 @@
-.company
-	.company__h1-block
-	
 .company__main-content
-	background: #fff
 	padding-bottom: 94px
+	+rmin(992)
+		padding-top: 215px
+	+r(991)
+		padding-top: 280px
+	+r(549)
+		padding-top: 65px
 	+r(767)
 		padding-bottom: 80px
-	.column-wrapper
-		text-align: center
-		+rmin(1200)
-			padding-top: 215px
-		+r(1199)
-			padding-top: 150px
-		+r(991)
-			padding-top: 280px
-		+r(549)
-			padding-top: 65px
 .company__h1-block
 	+r(549)
 		padding-bottom: 0
-.company__raised
-	color: $gray-light
-	font: 300 22px "Hind"
-	line-height: 1.3em
-	+r(991)
-		top: 120px
-	+r(767)
-		font-size: 18px
-		top: 66px
-	&:after
-		content: ''
-		position: absolute
-		bottom: -40px
-		left: 50%
-		transform: translateX(-50%)
-		height: 2px
-		width: 65px
-		background: $gray
-	strong
-		font-weight: 600
-	.raised-block__author
-		color: $blue-light
-		font-weight: 400
-		margin-top: 13px
-		font-size: 15px
-		span
-			font-weight: 700
-.company__column
+	.h1-block__container
+		&>div
+			color: $gray-light
+			font: 300 22px "Hind", sans-serif
+			line-height: 1.3em
+			+r(991)
+				top: 120px
+			+r(767)
+				font-size: 18px
+				top: 66px
+			&:after
+				content: ''
+				position: absolute
+				bottom: -40px
+				left: 50%
+				transform: translateX(-50%)
+				height: 2px
+				width: 65px
+				background: $gray
+			strong
+				font-weight: 600
+			p
+				color: $blue-light
+				font-weight: 400
+				margin-top: 13px
+				font-size: 15px
+				span
+					font-weight: 700
+.column
 	display: inline-block
 	width: 353px
 	font: $main-font
@@ -71,16 +64,19 @@
 			display: block
 			margin-left: auto
 			margin-right: auto
+.two-col-block
+	text-align: center
+	.column:first-of-type
+		margin-right: 65px
+		+r(991)
+			margin-right: 30px
+		+r(767)
+			margin-right: 0
+		&:first-letter
+			font-size: 4em
+			font-weight: 700
+			float: left
 .company__left-column
-	margin-right: 65px
-	+r(991)
-		margin-right: 30px
-	+r(767)
-		margin-right: 0
-	&:first-letter
-		font-size: 4em
-		font-weight: 700
-		float: left
 	img
 		margin-top: 35px
 		+r(768)
@@ -91,3 +87,10 @@
 		+r(768)
 			margin-bottom: 0
 			margin-top: 35px
+.company__left-column, .company__right-column 
+	img
+		display: block
+		margin-left: auto
+		margin-right: auto
+		max-width: 353px
+		max-height: 265px
