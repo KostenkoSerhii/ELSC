@@ -12,6 +12,21 @@ a
 		position: relative
 		&:hover
 			box-shadow:  0 0 2px #fff
+.btn-big-blue
+	background: $blue-light
+	color: #fff
+	font-size: 21px
+	padding: 7px 12px
+	border-radius: 10px
+	border: none
+	box-shadow:  0 0 2px transparent
+	+rmin(1200)
+		&:hover
+			box-shadow:  0 0 2px black
+	+r(991)
+		font-size: 17px
+		padding: 0 9px
+		line-height: 32px
 .inner-wrapper
 	+rmin(1200)
 		padding:  0 29px
@@ -92,7 +107,7 @@ h1
 	cursor: pointer
 	font: 400 13px "Hind", sans-serif
 	height: 25px
-	width: 50px
+	width: 100%
 	padding: 2px 15px  2px 5px
 	position: relative
 	&:after

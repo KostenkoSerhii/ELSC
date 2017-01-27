@@ -1,0 +1,70 @@
+---
+title: product page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--begin contact-us-->
+<div class="contact-us">
+	<div class="h1-block contact-us__h1-block" style="background-image: url(img/store-h1-bg.jpg);">
+		<!--begin container-->
+		<div class="container h1-block__container">
+			<h1>Contact us</h1>
+			<div >
+				Envienos en el formulario a continuación su inquietud o petición. Nosotros la atenderemos de forma rapida y segura.
+			</div>
+		</div>
+		<!--end container-->
+	</div>
+	<!--begin contact-us__main-content-->
+	<div class="contact-us__main-content main-content">
+		<!--begin container-->
+		<div class="container">
+			<div class="contact-us__form">
+				<form>
+					<div class="name-block form-block">
+						<span>Name</span><input type="text" name="name">
+					</div>
+					<div class="wrapper">
+						<div class="adress-block form-block">
+							<span>Adress</span><input type="text" name="adress">
+						</div>
+						<div class="country-block form-block">
+							<span>Country</span>			
+							<select name="country">
+								<option value="hide"></option>
+								<option value="op1">Country1</option>
+								<option value="op2">Country2</option>
+								<option value="op3">Country3</option>
+								<option value="op4">Country4</option>
+							</select>
+						</div>
+					</div>
+					<div class="email-block form-block">
+						<span>Email</span><input type="text" name="email">
+					</div>
+					<div class="message-block form-block">
+						<span>Message</span><textarea name="message"></textarea>
+					</div>
+					<button class="btn-default form-btn btn-big-blue" type="submit">Send your message</button>
+				</form>
+			</div>
+		</div>
+		<!--end container-->
+	</div>
+	<!--end contact-us__main-content-->
+
+</div>
+<!--end contact-us-->
+
+<!-- 	{# mixin example #}
+{{mixins.icon('facebook')}}
+-->
+<!-- 
+{# data usage example #}
+{% import "data/data.html" as tests %}
+{% for test in tests.list %}
+<li>{{test.title}}</li>
+{% endfor %}
+{# end of example #} -->
+{% endblock %}

@@ -6,7 +6,6 @@
 	padding-bottom: 98px
 	+r(767)
 		padding-bottom: 61px
-		
 .three-col-list
 	text-align: center
 .three-col-list__item
@@ -90,11 +89,18 @@
 			+s(store-btn2)
 			left: 17px
 .store
+	.select_wrapper
+		width: 50px
 	.h1-block__container
 		&>div
-			padding: 18px 32px 0
-			top: 77px
-			font-size: 15px
+			padding: 37px 75px 10px
+			top: 164px
+			+r(991)
+				top: 125px
+			+r(767)
+				top: 63px
+				font-size: 15px
+				padding: 18px 32px 0
 	.product
 		&:nth-of-type(2)
 			h2

@@ -1,0 +1,90 @@
+.contact-us
+	.h1-block__container
+		&>div
+			top: 163px
+			padding: 38px 142px 7px
+			&:after
+				content: ''
+				position: absolute
+				bottom: -26px
+				left: 50%
+				transform: translateX(-50%)
+				height: 2px
+				width: 65px
+				background: $gray
+			+r(1199)
+				top: 106px
+				padding: 38px 123px 0px
+			+r(767)
+				top: 65px
+				padding: 19px 74px 0px
+				font-size: 15px
+	&__form
+	&__main-content
+		padding-bottom: 86px
+		padding-top: 66px
+.contact-us__form
+	font: $main-font
+	color: $gray
+	max-width: 710px
+	margin: 0 auto 
+	+clr
+	+r(767)
+		max-width: 387px
+form
+	.wrapper
+		+clr
+	div
+	input, select, textarea, .select-view
+		border: 1px solid #d0d0d0
+		border-radius: 5px
+		padding: 0px 10px
+		color: inherit
+		font: inherit
+	input, select
+		height: 22px
+	.name-block, .email-block, .message-block
+		input, textarea
+			max-width: 630px
+			width: 100%
+			+r(767)
+				max-width: 306px
+	.adress-block, .country-block, .select_wrapper
+		display: inline-block
+		vertical-align: top
+	.adress-block
+		float: left
+		max-width: 393px
+		width: 100%
+		+r(767)
+			float: none
+			max-width: 100%
+		input
+			width: 80%
+			+r(767)
+				width: 79%
+	.country-block
+		float: right
+		+r(757)
+			float: none
+	.message-block
+		textarea
+			resize: none
+			height: 207px
+	.select_wrapper
+		width: 200px
+		+r(767)
+			max-width: 100%
+			width: 79%
+.form-block
+	margin-bottom: 15px
+	&:last-of-type
+		margin-bottom: 0
+	span
+		width: 78px
+		display: inline-block
+		vertical-align: top
+.form-btn
+	float: right
+	display: inline-block
+	margin-top: 30px
