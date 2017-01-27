@@ -3,11 +3,14 @@
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
+//=include lib/jquery-ui.min.js
 
 sayHello();
 
 $(document).ready(function(){
 	/*begin ready*/
+
+	/*begin 767*/
 	var windowWidth = $(window).width();
 	if(windowWidth < 767){
 		var img =	$(".company__right-column").children("img").detach();
@@ -18,8 +21,21 @@ $(document).ready(function(){
 			arrows: true
 		});
 		/*end services-sliders*/
+		$("#tabs").tabs({
+			show: { effect: "fadeIn", duration: 300 },
+			hide: { effect: "fadeOut", duration: 300}
+		});
+
+	}else{
+		$("#tabs").tabs({
+			show: { effect: "fadeIn", duration: 300, delay: 100 },
+			hide: { effect: "fadeOut", duration: 300, delay: 100 }
+		});
 
 	};
+	/*end >767*/
+
+
 	/*begin lang*/
 	$(".js-lang-btn").on("click", function(){
 		$(".lang__list").slideToggle();

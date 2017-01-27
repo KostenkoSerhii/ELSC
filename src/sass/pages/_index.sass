@@ -1,11 +1,10 @@
 .home-page
 	.slider
-		.container
-			+clr
-			padding: 100px 0 50px
-			height: 560px
 		.slide1-content-wrapper
 			float: right
+			+r(549)
+				float: none
+				text-align: center
 			h1
 				max-width: 510px
 				display: inline-block
@@ -13,9 +12,78 @@
 				text-align: left
 				letter-spacing: -1px
 				margin-right: 15px
+				+r(991)
+					font-size: 35px
+					max-width: 256px
+				+r(549)
+					max-width: 100%
+					display: block
+					margin-right: 0
+					text-align: center
 				span
 					font-weight: 600
 			.btn-default
 				margin-top: 17px
 				font: 400 28px "Hind", sans-serif
 				padding: 0px 16px
+				+r(991)
+					font-size: 13px
+					padding: 0 7px
+					margin-top: 13px
+	&__h2
+		font: 600 50px "Hind", sans-serif
+		color: $blue-light
+		margin-top: 59px
+		margin-bottom: 25px
+		+r(991)
+			margin-top: 17px
+			font-size: 35px
+			margin-bottom: 12px
+		+r(549)
+			text-align: center
+			font-size: 25px
+	.tabs-wrapper
+		min-height: 418px
+		margin-bottom: 74px
+		+r(991)
+			min-height: 320px
+			margin-bottom: 0px
+
+.slide__blockquote
+	max-width: 385px
+	font: 300 25px/1.3em "Hind", sans-serif
+	position: relative
+	&:before
+		z-index: 1
+		content: ''
+		position: absolute
+		top: -50px
+		left: 0
+		+s(com)
+	span
+		font-weight: 600
+	+r(991)
+		font-size: 15px
+		&:before
+			+s(Com-sm)
+			top: -20px
+	+r(767)
+		font-size: 13px
+		max-width: 190px
+	+r(549)
+		max-width: 100%
+
+	
+.slide__author
+	font: 600 18px "Hind", sans-serif
+	display: inline-block
+	margin-top: 40px
+	+r(991)
+		font-size: 11px
+		margin-top: 5px
+.home-second-slider
+	.container
+		padding-top: 129px
+		padding-left: 17px
+		+r(991)
+			padding-top: 56px

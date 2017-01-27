@@ -1,5 +1,24 @@
 .slider
 	color: #fff
 	overflow: hidden!important
-.slider__item
+	.container
+		+clr
+		padding: 100px 0 50px
+		height: 560px
+		+r(991)
+			height: 274px
+			padding-top: 38px
+		+r(549)
+			padding-left: 15px!important
+			padding-right: 15px!important
+.slide
 	+cover
+.slick-dots li button:before
+	width: 16px 
+	height: 16px
+	background: none
+	border: 1px solid #fff
+.slick-dots li button:hover:before
+	background: $blue-light
+.slick-dots li.slick-active button:before
+	background: #fff

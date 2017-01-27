@@ -1,0 +1,126 @@
+.tabs-wrapper
+	+clr
+.tabs-nav
+	float: left
+	margin-top: 36px
+	max-width: 320px
+	+r(991)
+		margin-top: 0px
+	+r(549)
+		float: none
+		margin: 0 auto
+.tabs-nav__item
+	color: $gray-light
+	transition: all .3s
+	border-radius: 8px
+	padding: 24px 0px 20px 0px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		height: 1px 
+		left: 0
+		width: 272px
+		background:  #d9d9d9
+	+r(991)
+		padding: 22px 0px 16px 0px
+	+r(767)
+		&:before
+			width: 220px
+	+r(549)
+		&:before
+			width: 100%
+	span
+		font: 300 35px/1em "Hind", sans-serif
+		display: block
+		+r(991)
+			font-size: 27px
+	strong
+		font: 700 18px/1em "Hind", sans-serif
+		+r(991)
+			font-size: 15px
+.ui-tabs-active
+	padding: 14px 10px 12px 22px
+	color: #fff
+	background: $blue-light
+	&:before
+		display: none
+	&+li
+		&:before
+			display: none
+	+r(991)
+			padding: 14px 10px 6px 22px
+.tab-block
+	float: right
+	font: 400 35px/1.2em "Hind", sans-serif
+	color: $gray-light
+	max-width: 650px
+	letter-spacing: 0px
+	+r(1199)
+		max-width: 600px
+	+r(991)
+		font-size: 15px
+		max-width: 250px
+	+r(549)
+		float: none
+		max-width: 100%
+		text-align: center
+		margin-top: 20px
+		min-height: 350px
+
+	h3
+		display: inline-block
+		color: $blue-light
+		font: 700 35px/1em "Hind", sans-serif
+		+r(991)
+			font-size: 15px
+.tab-block__btn
+	margin-top: 25px
+	background: $blue-light
+	color: #fff
+	font-size: 21px
+	line-height: 40px
+	padding: 0 12px
+	border-radius: 10px
+	border: none
+	box-shadow:  0 0 2px transparent
+	+rmin(1200)
+		&:hover
+			box-shadow:  0 0 2px black
+	+r(991)
+		float: right
+		font-size: 17px
+		padding: 0 9px
+		margin-top: 22px
+		line-height: 32px
+	+r(549)
+		float: none
+.tab-block__img
+	vertical-align: top
+	margin-right: 100px
+	margin-top: 10px
+	width: 242px
+	height: 388px
+	+cover
+	display: inline-block
+	+r(1199)
+		margin-right: 50px
+	+r(991)
+		display: block
+		margin: 0 auto
+		width: 147px
+		height: 200px
+		background-size: contain
+.tab-block__wrapper
+	vertical-align: top
+	display: inline-block
+	width: 290px
+	margin-top: 33px
+	+clr
+	+r(991)
+		width: auto
+		margin-top: 0px
+	+r(549)
+		margin-top: 20px
+		text-align: center
