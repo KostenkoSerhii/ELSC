@@ -1363,19 +1363,6 @@ strong {
   margin: 0 124px;
 }
 
-.content-list__item .content-list__img-block {
-  display: inline-block;
-  width: 129px;
-  height: 129px;
-  background-color: #ccc;
-  border-radius: 50%;
-  position: relative;
-  z-index: 1;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  transition: background-color .4s;
-}
-
 .content-list__item h2 {
   color: #294773;
   font: 600 22px "Hind", sans-serif;
@@ -1387,6 +1374,19 @@ strong {
   font: 400 15px "Hind", sans-serif;
   margin-bottom: 34px;
   line-height: 1.3em;
+}
+
+.content-list__img-block {
+  display: inline-block;
+  width: 129px;
+  height: 129px;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: background-color .4s;
 }
 
 .content-list__btn {
