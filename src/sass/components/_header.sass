@@ -82,45 +82,48 @@
 	margin-top: 26px
 	+r(767)
 		display: none
-	.header__menu-item
-		font: $main-font
-		color: $gray-light
-		text-transform: uppercase
-		display: inline-block
-		+r(991)
-			margin-right: 20px
-			&:last-of-type
-				margin-right: 0
-		+rmin(992)
-			margin-right: 51px
-			&:nth-of-type(5)
-				margin-right: 41px
-			&:last-of-type
-				margin-right: 0
-		a
-			display: block
-			+rmin(1200)
-				position: relative
-				&:before, &:after
-					position: absolute
-					display: inline-block
-					transition: transform 0.3s, opacity 0.2s
-					opacity: 0
-				&:before
-					left: -10px
-					display: inline-block
-					content: '['
-					transform: translateX(20px)
-				&:after
-					right: -10px
-					content: ']'
-					transform: translateX(-20px)
-				&:hover
-					&:before, &:after
-						opacity: 1
-						transform: translateX(0px)
 	.is-active
 		color: $blue-light
+.header__menu-item
+	font: $main-font
+	color: $gray-light
+	text-transform: uppercase
+	display: inline-block
+	+r(991)
+		margin-right: 20px
+		&:last-of-type
+			margin-right: 0
+	+r(767)
+		display: block
+	+rmin(992)
+		margin-right: 51px
+		&:nth-of-type(5)
+			margin-right: 41px
+		&:last-of-type
+			margin-right: 0
+	a
+		display: block
+		+rmin(1200)
+			position: relative
+			&:before, &:after
+				position: absolute
+				display: inline-block
+				transition: transform 0.3s, opacity 0.2s
+				opacity: 0
+				transform: translateY(-50%)
+			&:before
+				left: -10px
+				display: inline-block
+				content: '['
+				transform: translateX(20px)
+			&:after
+				right: -10px
+				content: ']'
+				transform: translateX(-20px)
+			&:hover, &:focus
+				&:before, &:after
+					opacity: 1
+					transform: translateX(0px)
 .menu-bnt-mobile
 	display: none
 	+r(767)

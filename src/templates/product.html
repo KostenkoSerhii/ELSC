@@ -6,7 +6,7 @@ title: product page
 {% block content %}
 <!--begin product-->
 <div class="products">
-	<div class="h1-block product__h1-block" style="background-image: url(img/prod-h1-img.jpg);">
+	<div class="h1-block products__h1-block" style="background-image: url(img/prod-h1-img.jpg);">
 		<!--begin container-->
 		<div class="container h1-block__container">
 			<h1>Products</h1>
@@ -19,40 +19,42 @@ title: product page
 	<!--begin main-content-->
 	<div class="main-content">
 		<!--begin first-product-->
-		<div class="product-first product__item " style="background-image: url('img/prod1-bg.jpg')">
+		<div class="product-block " style="background-image: url('img/prod1-bg.jpg')">
 			<!--begin container-->
 			<div class="container">
-				<div class="product-wrapper">
-					<h2>ELSC 1090</h2>
-					<strong class="shore-desc">METAL GENERAL PURPOSE</strong>
-					<p class="long-desc">Producto especial para limpiar y cubrir superficies metalicas.</p>
-					<a  class="item-btn down-btn  btn-default" href="#" download>
+				<div class="product-block__inner">
+					<h2 class="product-block__h2">ELSC 1090</h2>
+					<strong class="product-block__short-desc">METAL GENERAL PURPOSE</strong>
+					<p class="product-block__long-desc">Producto especial para limpiar y cubrir superficies metalicas.</p>
+					<a  class="product-block__btn down-btn  btn-default" href="#" download>
 						{{mixins.icon('downblue')}}
 						Download <br> <span>specifications</span>
 					</a>
-					<a class="item-btn video-btn  btn-default" href="#">
+					<a class="product-block__btn video-btn  btn-default" href="#">
 						{{mixins.icon('videoblue')}}
 						See a video
 					</a>
+					<div class="product-block__img" style="background-image: url('img/prod1.png');"></div>
 				</div>
 			</div>
 			<!--end container-->
 		</div>
 		<!--end first-product-->
 
-		<!--begin product-second-->
-		<div class="product-second product__item " style='background-image: url("img/prod2-bg.png")'>
+		<!--begin product-block-->
+		<div class="product-block" style='background-image: url("")'>
 			<!--begin container-->
 			<div class="container">
-				<div class="product-wrapper">
-					<h2>ELSC 1470</h2>
-					<strong class="shore-desc">SEMI-GLOSS HARDSCAPE SEALER</strong>
-					<p class="long-desc">Producto especial para limpiar y cubrir techos y muros.</p>
-					<a  class="item-btn down-btn  btn-default" href="#" download>
+				<div class="product-block__inner">
+				<div class="product-block__img" style="background-image: url('img/prod2.png');"></div>
+					<h2 class="product-block__h2">ELSC 1470</h2>
+					<strong class="product-block__short-desc">SEMI-GLOSS HARDSCAPE SEALER</strong>
+					<p class="product-block__long-desc">Producto especial para limpiar y cubrir techos y muros.</p>
+					<a  class="product-block__btn down-btn  btn-default" href="#" download>
 						{{mixins.icon('downred')}}
 						Download <br> specifications
 					</a>
-					<a class="item-btn video-btn  btn-default" href="#">
+					<a class="product-block__btn video-btn  btn-default" href="#">
 						{{mixins.icon('videored')}}
 						See a video
 					</a>
@@ -60,29 +62,31 @@ title: product page
 			</div>
 			<!--end container-->
 		</div>
-		<!--end product-second-->
+		<!--end product-block-->
 
-		<!--begin product-third-->
-		<div class="product-third product__item" style='background-image: url("img/prod3-bg.jpg")'>
+		<!--begin product-block-->
+		<div class="product-block" style='background-image: url("img/prod3-bg.jpg")'>
 			<!--begin container-->
 			<div class="container">
-				<div class="product-wrapper">
-					<h2>ELSC 1110</h2>
-					<strong class="shore-desc">SEMI-GLOSS FLOOR COATING</strong>
-					<p class="long-desc">Producto especial para  limpiar y cubrir pisos.</p>
-					<a  class="item-btn down-btn  btn-default" href="#" download>
+				<div class="product-block__inner">
+					<h2 class="product-block__h2">ELSC 1110</h2>
+					<strong class="product-block__short-desc">SEMI-GLOSS FLOOR COATING</strong>
+					<p class="product-block__long-desc">Producto especial para  limpiar y cubrir pisos.</p>
+					<a  class="product-block__btn down-btn  btn-default" href="#" download>
 						{{mixins.icon('downred')}}
 						Download <br> specifications
 					</a>
-					<a class="item-btn video-btn  btn-default" href="#">
+					<a class="product-block__btn video-btn  btn-default" href="#">
 						{{mixins.icon('videored')}}
 						See a video
 					</a>
+					<div class="product-block__img" style="background-image: url('img/prod1.png');"></div>
 				</div>
 			</div>
 			<!--end container-->
 		</div>
-		<!--end product-third-->
+		<!--end product-block-->
+		
 	</div>
 	<!--end main-content-->
 	

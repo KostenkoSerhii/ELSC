@@ -14,20 +14,20 @@
 .services__h1-block
 	+r(549)
 		padding-bottom: 0
-.services__content-list
+.content-list
 	padding: 0px  5px 0
 	text-align: center
 	+r(767)
 		width: 252px
 		margin: 0 auto
-.services__list-item
+.content-list__item
 	display: inline-block
 	width: 252px
 	margin-bottom: 100px
 	+rmin(1200)
-			&:hover
-				.item__img-block
-					background-color: #ccc - 30%
+		&:hover
+			.content-list__img-block
+				background-color: #ccc - 30%
 	+r(991)
 		width: 230px
 	+r(767)
@@ -42,7 +42,7 @@
 			margin: 0 5px
 		+r(767)
 			margin: 0
-	.item__img-block
+	.content-list__img-block
 		display: inline-block
 		width: 129px
 		height: 129px
@@ -64,7 +64,7 @@
 		line-height: 1.3em
 		+r(767)
 			font: $small-main-font
-.services__list-btn
+.content-list__btn
 	padding: 0px 14px
 	border-color: $gray
 	border-radius: 7px
