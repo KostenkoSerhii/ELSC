@@ -985,10 +985,7 @@ strong {
   content: '';
   position: absolute;
   right: 5px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 7px;
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -2200,6 +2197,9 @@ ul.select-options li:hover {
   }
   .footer__menu:before{
     top: -15px;
+  }
+  .footer__first-block{
+    margin-left: 0;
   }
   .footer__manufact{
     font-size: 9px;
