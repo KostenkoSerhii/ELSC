@@ -1,0 +1,58 @@
+$select-color: gray
+$select-bg-not: #fff
+$select-border-color: gray
+$select-font: 400 13px "Hind", sans-serif
+$select-active-li: #eaeaea
+$select-hover-li: #f9f9f9
+$select_wrapper-width: 200px
+.select-view	
+	background: $select-bg-not
+	border: 1px solid $select-border-color
+	color: $select-color
+	border-radius: 5px
+	cursor: pointer
+	font: $select-font
+	height: 25px
+	padding: 2px 15px  2px 5px
+	position: relative
+	margin-bottom: 5px
+	&:after
+		transition: all .3s
+		content: ''
+		position: absolute
+		right: 5px
+		top: 50%
+		transform: translateY(-50%)
+		+arr(8, 7, $select-color, b)
+.select_wrapper
+	width: $select_wrapper-width
+	position: relative
+	.active
+		&:after
+			transform: rotateX(180deg)
+ul.select-options
+	background: $select-bg-not
+	position: absolute
+	display: none
+	cursor: pointer
+	border: 1px solid #e2e2e2
+	z-index: 22
+	width: 100%
+	// height: 200px
+	// overflow-y: scroll
+	li
+		color: $select-color
+		font: $select-font
+		padding: 5px 0
+		transition: background .4s
+		text-align: center
+		&[rel="hide"] 
+			display: none
+		&.active
+			background: $select-active-li
+			&:hover
+				background: $select-active-li
+		&:hover
+			background: $select-hover-li
+.select-hidden
+	display: none
